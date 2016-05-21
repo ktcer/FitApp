@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+    
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.cn.fit.util.CircleImageView
+            android:id="@+id/heath_diray_pic"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            app:border_width="2dp"
+       	    app:border_color="@color/whitesmoke"
+            />
+
+     
+        
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="使用人数"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textSize="16dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/users_num"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8人"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+          
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/list_biankuang" >
+
+        <LinearLayout
+            android:id="@+id/detail_health_info"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/health_detail"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

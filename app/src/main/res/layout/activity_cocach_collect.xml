@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_myAppoint"
+            layout="@layout/main_top" />
+        <!-- 主题图片 -->
+        <!--<com.cn.fit.util.SlideShowView-->
+            <!--android:id="@+id/slideshowView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="180dp"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <LinearLayout
+            android:id="@+id/linearlayout_myAppoint"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dip"-->
+                <!--android:layout_marginLeft="0dip"-->
+                <!--android:layout_marginRight="0dip"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal" >-->
+                <!--<com.cn.fit.util.dropdownmenu.DropdownButton-->
+                    <!--android:id="@+id/chooseSection"-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1" />-->
+                <!--<View-->
+                    <!--android:layout_width="0.5dip"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/lightgray"-->
+                    <!--android:layout_marginTop="5dip"-->
+                    <!--android:layout_marginBottom="5dip"/>-->
+                <!--<com.cn.fit.util.dropdownmenu.DropdownButton-->
+                    <!--android:id="@+id/chooseHospital"-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightgray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent" >
+
+                <com.cn.fit.util.refreshlistview.XListView
+                    android:id="@+id/lv_scretray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/lightgray"
+                    android:dividerHeight="1dp"
+                    android:background="@color/white"
+                    android:listSelector="@android:color/transparent" >
+                </com.cn.fit.util.refreshlistview.XListView>
+
+                <!--<View-->
+                    <!--android:id="@+id/mask"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#80000000" />-->
+
+                <!--<com.cn.fit.util.dropdownmenu.DropdownListView-->
+                    <!--android:id="@+id/dropdownsectionList"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical" />-->
+                <!--<com.cn.fit.util.dropdownmenu.DropdownListView-->
+                    <!--android:id="@+id/dropdownhospitalList"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical" />-->
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Must be last for right layering display -->
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.cn.fit.util.searchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</FrameLayout>

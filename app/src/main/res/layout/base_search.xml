@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecdemo="http://schemas.android.com/apk/com.cn.aihu"
+    android:orientation="vertical"
+    style="@style/NavPage"
+    android:background="#E4E3E3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cn.fit.ui.chat.common.view.SettingItem
+        android:id="@+id/search_by_id"
+        style="@style/settings_item_layout_single"
+        ecdemo:item_accessoryType="arrow"
+        android:layout_marginTop="@dimen/LargerPadding"
+        ecdemo:item_showDivider="true"
+        ecdemo:item_titleText="@string/searcha_by_id_tip" />
+
+    <com.cn.fit.ui.chat.common.view.SettingItem
+        android:id="@+id/search_by_indistinct"
+        style="@style/settings_item_layout_single"
+        ecdemo:item_accessoryType="arrow"
+        ecdemo:item_showDivider="true"
+        ecdemo:item_titleText="@string/searcha_by_indistinct_name_tip" />
+</LinearLayout>

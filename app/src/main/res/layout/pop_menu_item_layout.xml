@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg_item"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pop_menu_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:text="项目"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

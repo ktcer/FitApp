@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/process_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15.0dip" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/ic_loading" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center"
+        android:text="正在加载..."
+        android:textColor="@color/text_content"
+        android:textSize="@dimen/text_view_content" />
+
+</LinearLayout>

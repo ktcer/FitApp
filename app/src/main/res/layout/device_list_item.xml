@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dip"
+    android:background="@drawable/bg_item"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical" >
+        
+        
+
+        <TextView
+            android:id="@+id/device_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="绑定设备类型："
+            style="@style/text_style" />
+
+        <TextView
+            android:id="@+id/device_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="使用人："
+            style="@style/text_style" />
+        
+        <TextView
+            android:id="@+id/remaining_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="剩余时间："
+            style="@style/text_style"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/hold_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            style="@style/text_style" />
+        
+        <TextView
+            android:id="@+id/operate_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            style="@style/text_style" />
+        
+        </LinearLayout>
+
+</LinearLayout>

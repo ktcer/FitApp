@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.cn.fit"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.00"
+    }
+    //签名配置
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'ailian_keystore'
+            keyPassword '770859'
+            storeFile file('E:/fitness/coding/FitApp/app/ailian_keystore .jks')
+            storePassword '770859'
+        }
+    }
+    buildTypes {
+        //这里的名字自定义，不要求大小写
+       debug{
+            // 这里是在 applicationId 中添加了一个后缀。所以『.』要加上
+//            applicationIdSuffix ".release"
+            // 这里的作用是选择是否混淆代码
+           // 是否进行混淆
+//            minifyEnabled true
+//            shrinkResources true
+            proguardFile 'proguard-rules.pro'
+        }
+        release{
+            // 这里是在 applicationId 中添加了一个后缀。所以『.』要加上
+            // 这里的作用是选择是否混淆代码
+            // 是否进行混淆
+//            minifyEnabled true
+//            shrinkResources true
+            signingConfig signingConfigs.releaseConfig
+            proguardFile 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def date = new Date();
+                    def formattedDate = date.format('yyyyMMdd')
+                    def finalName = output.outputFile.name
+                    finalName = finalName.replace("app","fit")
+                    finalName = finalName.replace(".apk", "-" + defaultConfig.versionName + "-" + defaultConfig.versionCode + "-"+formattedDate+ ".apk")
+                    output.outputFile = new File(output.outputFile.parent,finalName)
+                }
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+// 这里是为了不同过的版本设置一些特殊的参数，并不直接和 buildType 关联。
+//例如：使用 buildType 中的 dev 版本，也可以使用 flavors_release 里面设置的自定义参数。这需要自己按照需求制定。
+productFlavors{
+    //自定义名字不过不能和上面buildType中相同，不然Gradle编译会不通过。在这里使用了『flavors_』前缀以便区分。
+    production{
+        applicationId "com.cn.fit"
+        // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+        resValue("string" , "environment","2")
+    }
+
+    staging{
+//           manifestPlaceholders = [str:"devStr",package_name:"com.cn.fit.dev"]
+        applicationId "com.cn.fit.staging"
+        resValue("string" , "environment","1")
+    }
+
+    developing{
+//            manifestPlaceholders = [str:"devStr",package_name:"com.cn.fit.dev"]
+        applicationId "com.cn.fit.developing"
+        resValue("string" , "environment","0")
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+ }
+}
+
+dependencies {
+//   compile 'com.umeng.analytics:analytics:latest.integration'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'libs', include: '**/*.so')
+}
+
+
+artifacts.add("default", file('httpmime-4.1.3.jar'))
+artifacts.add("default", file('SocialSDK_QQZone_1.jar'))
+artifacts.add("default", file('SocialSDK_QQZone_2.jar'))
+artifacts.add("default", file('SocialSDK_WeiXin_1.jar'))

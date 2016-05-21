@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<resources>
+      <dimen name="list_divider_height">1.0px</dimen>
+    <dimen name="size_large">20.0dip</dimen>
+    <dimen name="size_big">18.0dip</dimen>
+    <dimen name="size_medium">16.0dip</dimen>
+    <dimen name="size_top_title_size">20.0dip</dimen>
+    <dimen name="size_small">14.0dip</dimen>
+    <dimen name="size_tiny">12.0dip</dimen>
+</resources>

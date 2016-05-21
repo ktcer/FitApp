@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <View
+                android:id="@+id/img_item_practice_chapters_group_top2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/between_line"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_item_practice_chapters_group_expand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ic_open_chapter" />
+
+            <View
+                android:id="@+id/img_item_practice_chapters_group_bottom2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/between_line"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_item_title"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="280dip"
+            android:paddingLeft="20dp"
+            android:singleLine="false"
+            android:paddingRight="30dp"
+            android:text="第一章 有理数" />
+
+        <TextView
+            android:id="@+id/txt_item_value"
+            style="@style/text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/font_gray"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

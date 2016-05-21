@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chatting_time_tv"
+        style="@style/ChattingUISplit" />
+
+    <LinearLayout
+        style="@style/ChattingUIContent"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/chatting_content_itv"
+            android:layout_marginLeft="@dimen/LargerPadding"
+            android:layout_marginRight="@dimen/LargerPadding"
+            android:background="@drawable/chat_tips_bg"
+            android:gravity="left" />
+    </LinearLayout>
+
+</LinearLayout>

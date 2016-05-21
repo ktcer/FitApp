@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_item">
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+	<ImageView
+       android:id="@+id/qa_person_pic"
+	   android:layout_width="50dp"
+	   android:layout_height="50dp"
+	   android:background="@drawable/setting_myaccount"
+	   />
+	<LinearLayout 
+	    android:layout_marginTop="5dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="horizontal">
+			<TextView 			    
+			    android:id="@+id/qa_name"
+			    android:layout_width="0dp"
+			    android:layout_weight="6"
+			    android:layout_height="match_parent"
+			    android:text="张三"
+			    style="@style/text_style"/>
+			<TextView
+		        android:id="@+id/qa_comment"
+		        android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_marginRight="0dip"
+		        android:layout_height="match_parent"
+		        android:drawableLeft="@drawable/comment"
+		        android:text="11"
+		        style="@style/text_style"
+		        android:textSize="12dip"
+		        android:textColor="@color/font_gray"></TextView>
+	    </LinearLayout>
+	   	<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="horizontal">
+	        <TextView 
+			    android:id="@+id/qa_time"
+			    android:layout_width="120dp"
+			    android:layout_height="match_parent"
+			    android:text="7天前"
+				style="@style/text_style"
+				android:textColor="@color/font_gray"
+				android:textSize="12dip"/>
+	       
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	</LinearLayout>
+	
+    
+    <TextView 			    
+			    android:id="@+id/qa_content"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="最近有些头疼，怎么办呢"
+			    android:padding="10dip"
+			    style="@style/text_style"/>
+
+</LinearLayout>

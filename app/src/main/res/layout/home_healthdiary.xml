@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.cn.aihu.ui.patient.main.healthdiary.datepicker.SliderContainer-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:horizontalpicker="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:fbutton="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/dateSliderContainer"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/gray_second"-->
+    <!--android:paddingBottom="1dip" >-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="1dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+<!--        <ImageView
+            android:id="@+id/decreaseperson"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:src="@drawable/jiantou2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="我"
+            android:textColor="@color/blue_second"
+            android:textSize="18dip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/increaseperson"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:src="@drawable/jiantou1"
+            android:visibility="gone" />-->
+        <com.cn.fit.util.dropdownmenu.DropdownButton
+            android:id="@+id/choosePlan"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4" />
+
+        <ImageView
+            android:id="@+id/decreasemonth"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="7dip"
+            android:src="@drawable/jiantou2"
+            />
+
+        <TextView
+            android:id="@+id/health_date"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="7dip"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="2015年12月"
+            android:textColor="@color/blue_second"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/increasemonth"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="7dip"
+            android:src="@drawable/jiantou1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_diary_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+		<ScrollView 
+		    android:fadingEdge="none"
+		    android:overScrollMode="never"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sonOfScrollView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/noDiaryHasInternet"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/icon_riji"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:id="@+id/nodiaryTitle_healthdiary"
+                            android:layout_gravity="center_vertical"
+                            android:text="您还没有健康日记哦，选择一个健康秘书为您制定吧。"
+                            style="@style/text_style_nosingleLine"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/infoLinearLayout"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ball"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text=""
+                            style="@style/text_style_nosingleLine"
+                            android:id="@+id/fillBasicInformation_healthdiary"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/gotoFillInformation"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="40dp"
+                        android:id="@+id/testLinearLayout"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ball"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            style="@style/text_style_nosingleLine"
+                            android:id="@+id/livingHabitEvaluation_healthdiary"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/gotoTestLivingHabit"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/chooseLinearLayout"
+                        android:layout_weight="1"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ball"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            style="@style/text_style_nosingleLine"
+                            android:id="@+id/chooseExpert_healthdiary"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/gotoChooseExpert"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+                        <com.cn.fit.util.FButton
+                            android:id="@+id/gotoSecretary"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/demo_button_min_height"
+                            android:minWidth="@dimen/demo_button_min_width"
+                            android:text="咨询秘书"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            fbutton:buttonColor="@color/blue_second"
+                            fbutton:shadowEnabled="false" />
+                        <com.cn.fit.util.FButton
+                            android:id="@+id/gotoHealthPost"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/demo_button_min_height"
+                            android:minWidth="@dimen/demo_button_min_width"
+                            android:text="逛逛驿站"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            fbutton:buttonColor="@color/blue_second"
+                            fbutton:shadowEnabled="false" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/noDiaryNoInternet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                    <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                        android:id="@+id/aihuTips"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:singleLine="false"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="" />
+                    <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                        android:id="@+id/CommunicationWithSecretary"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:singleLine="false"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:text="" />
+
+                    <!--                <com.cn.aihu.util.FButton
+                                        android:id="@+id/add_diary_btn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_below="@id/CommunicationWithSecretary"
+                                        android:layout_margin="15dp"
+                                        android:layout_marginBottom="10dip"
+                                        android:minHeight="@dimen/demo_button_min_height"
+                                        android:minWidth="@dimen/demo_button_min_width"
+                                        android:text="开始测评"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp"
+                                        fbutton:buttonColor="@color/blue_second"
+                                        fbutton:shadowEnabled="false" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+<!--开始设置选择栏以下的内容-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <com.cn.fit.util.HorizontalPickerHealthDiary
+                xmlns:horizontalpicker="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/datepicker_healthdiary"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/picker_background"
+                android:ellipsize="marquee"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="2"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/picker_text_color"
+                android:textSize="16dp" />
+    <!--        <com.cn.aihu.ui.patient.main.healthdiary.datepicker.ScrollLayout
+                style="@style/Scroller"
+                app:childWidth="45dp"
+                app:labelerClass="com.cn.aihu.ui.patient.main.healthdiary.datepicker.DayDateLabeler"
+                app:labelerFormat="%td %ta" />-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dip"
+                android:background="@color/white"
+                android:src="@drawable/healthdiary_hengjiantou"
+                android:scaleType="fitXY"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/blue_second" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/health_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dip" >
+
+                        <ImageView
+                            android:id="@+id/healthy_dairy_remind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dip"
+                            android:src="@drawable/ganyu_remind" />
+
+                        <ImageView
+                            android:id="@+id/healthy_dairy_summarize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="20dip"
+                            android:src="@drawable/ganyu_zongjie" />
+
+                       <!--  <ImageView
+                            android:id="@+id/healthy_dairy_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="20dip"
+                            android:visibility="gone"
+                            android:src="@drawable/ganyu_location" /> -->
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <com.cn.fit.util.dropdownmenu.DropdownListView
+            android:id="@+id/dropdownPlans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+</FrameLayout>
+<!--</com.cn.aihu.ui.patient.main.healthdiary.datepicker.SliderContainer>-->
+</LinearLayout>

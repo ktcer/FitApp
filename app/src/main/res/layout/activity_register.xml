@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/lightgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border" >
+
+        <EditText
+            android:id="@+id/phone_Register"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入您的手机号"
+            android:inputType="number"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/delete_PhoneNumber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/txt_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border" >
+
+        <EditText
+            android:id="@+id/code_Register"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:src="@drawable/txt_clear"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null" />
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/getCode_Register"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:shadowEnabled="false" />
+
+        <ImageView
+            android:id="@+id/delete_identifyCode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/getCode_Register"
+            android:src="@drawable/txt_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border" >
+
+        <EditText
+            android:id="@+id/password_Register"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/PasswordVisible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iconfont_kejian" />
+
+        <ImageView
+            android:id="@+id/PasswordInVisible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iconfont_bukejian"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/invitationCode_Register"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入邀请码(选填)"
+            android:inputType="number"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/delete_InvitationCode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/txt_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dip"
+        android:gravity="center" >
+
+        <!--
+             <com.cn.aihu.util.FButton
+            android:id="@+id/submit_Register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:cornerRadius="1dp"
+            fbutton:shadowEnabled="false" />
+        -->
+
+        <com.cn.fit.util.progressbutton.iml.ActionProcessButton
+            android:id="@+id/submit_Register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            custom:pb_colorComplete="@color/lightgreen"
+            custom:pb_colorNormal="@color/blue_second"
+            custom:pb_colorPressed="@color/progressbutton_presscolor"
+            custom:pb_colorProgress="@color/fbutton_color_sun_flower"
+            custom:pb_textComplete="@string/register_Success"
+            custom:pb_textProgress="@string/register_Loading" />
+    </LinearLayout>
+
+</LinearLayout>

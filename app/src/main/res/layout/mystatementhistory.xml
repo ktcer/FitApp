@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" /> 
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    >
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:text="病情自述"
+	        style="@style/text_large_style"
+	        android:gravity="center"/>
+	    <TextView 
+	        android:id="@+id/date_myStatementHistory"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:text="添加时间：2015年3月30日"
+	        style="@style/text_style"
+	        android:gravity="center"/>
+	</RelativeLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="10dip"
+	    android:gravity="top"
+	    android:layout_height="match_parent"
+	    android:id="@+id/statemnet_myStatementHistory"
+	  	style="@style/text_small_style"
+	  	android:singleLine="false"
+	  	android:layout_marginLeft="10dp"
+	  	android:layout_marginRight="10dp"
+	  	android:layout_marginBottom="10dip"
+	  	android:background="@drawable/list_biankuang"
+	    />
+</LinearLayout>

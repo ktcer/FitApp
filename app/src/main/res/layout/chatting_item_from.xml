@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv" >
+
+    <include layout="@layout/chatting_item_avatar_from" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatting_user_tv"
+            style="@style/ChattingUISenderText"
+            android:visibility="gone" />
+
+        <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+            android:id="@+id/chatting_content_itv"
+            style="@style/ChattingUIText"
+            android:background="@drawable/chatfrom_bg"
+            android:autoLink="all"
+            android:linksClickable="false"
+            android:maxWidth="225.0dip"
+            android:minHeight="@dimen/ChattingContentMinHeight"
+            emojicon:emojiconSize="@dimen/Emoji_icon_size"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="15.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

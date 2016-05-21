@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/device_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/Btn_playback_fb"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="音频提醒"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/fbutton_color_emerald"
+            fbutton:shadowEnabled="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" >
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/goinProgram_voice"
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dip"
+            android:gravity="center"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="进入应用"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_third"
+            fbutton:cornerRadius="120dp"
+            fbutton:shadowEnabled="false" />
+    </RelativeLayout>
+
+</FrameLayout>

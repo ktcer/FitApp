@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/album_ui_bg"
+    android:keepScreenOn="true" >
+
+    <ImageView
+        android:id="@+id/image_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/loading_failed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="下载图片失败"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:visibility="gone" />
+	<ProgressBar 
+	    android:id="@+id/footLoading"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

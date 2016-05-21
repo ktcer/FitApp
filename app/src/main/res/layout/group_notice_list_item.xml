@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.cloopen.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="15.0dip"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysmsg_item_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/msg_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="群组通知"
+                android:textColor="#ff777777"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="12.0dip"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#ff9a9a9a"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/systemmsg_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_box_brackground"
+            android:clickable="true"
+            android:minHeight="80.0dip"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/ImageViewHeader"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/group_head"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/user_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="88.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_toRightOf="@id/ImageViewHeader"
+                android:layout_alignTop="@+id/ImageViewHeader"
+                android:duplicateParentState="true"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="nickname"
+                android:textColor="@color/system_msg_nikename_color"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/unread"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_below="@id/user_nickname"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="6.0dip"
+                android:layout_toRightOf="@id/ImageViewHeader"
+                android:src="@drawable/unread_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/result_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_nickname"
+                android:layout_marginRight="88.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/unread"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="result_summary"
+                android:textColor="@color/system_msg_nikename_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/refuse_reason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_summary"
+                android:layout_marginRight="88.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/unread"
+                android:duplicateParentState="true"
+                android:includeFontPadding="false"
+                android:paddingBottom="5.0dip"
+                android:singleLine="true"
+                android:text="refuse_reason"
+                android:textColor="@color/system_msg_nikename_color"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sysMsg_from"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_summary"
+                android:layout_marginRight="88.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/ImageViewHeader"
+                android:duplicateParentState="true"
+                android:includeFontPadding="false"
+                android:paddingBottom="5.0dip"
+                android:singleLine="true"
+                android:text="来源:"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="14.0dip"
+                android:layout_height="14.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/operation_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14.0dip"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:minWidth="68.0dip"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/accept_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="false"
+                    android:includeFontPadding="false"
+                    android:minWidth="68.0dip"
+                    android:paddingLeft="3.0dip"
+                    android:paddingRight="3.0dip"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="1.0dip"
+                    android:background="@drawable/system_button_selector"
+                    android:text="同意"
+                    android:textColor="#ff333333"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/Refuse_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/system_button_selector"
+                    android:duplicateParentState="false"
+                    android:includeFontPadding="false"
+                    android:minWidth="68.0dip"
+                    android:paddingLeft="3.0dip"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:paddingRight="3.0dip"
+                    android:text="拒绝"
+                    android:textColor="#ff333333"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="已拒绝"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

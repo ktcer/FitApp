@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <include
+	    android:id="@+id/paper_title_bar_layout" 
+	    layout="@layout/main_top"/>
+     
+    
+    <!-- <RelativeLayout 
+	   android:id="@+id/common_title"
+	   android:layout_width="match_parent" 
+	   android:layout_height="wrap_content"
+	   android:layout_alignParentTop="true"
+	   android:background="@drawable/head_bg_blue" >
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="收藏文章"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    </RelativeLayout> -->
+	
+    
+    <ListView
+        android:id="@+id/collect_paper_lv"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+	    android:listSelector="@android:color/transparent">
+    
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	<include
+	    android:id="@+id/nurse_title_bar_layout" 
+	    layout="@layout/main_top"/>
+    <!-- <RelativeLayout
+        android:id="@+id/nurse_title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/navibar_background" >
+
+        <TextView
+            android:id="@+id/middle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/title_style"
+            android:text="收藏专家" 
+            />
+        
+        <ImageView 
+            android:id="@+id/nurse_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_icon"/>
+    </RelativeLayout> -->
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/choose_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:text="选择类别"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="▼"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+    </LinearLayout> -->
+
+    <com.cn.fit.util.refreshlistview.XListView
+        android:id="@+id/nurse_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </com.cn.fit.util.refreshlistview.XListView>
+
+</LinearLayout>

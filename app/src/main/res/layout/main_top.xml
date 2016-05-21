@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:layout_alignParentTop="true"
+    android:background="@color/navibar_background" >
+
+    <ImageView
+        android:id="@+id/left_Btn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_action_navigation_arrow_back_inverted"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/middle_tv"
+        style="@style/title_style"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dip"
+        android:text="历史"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/right_Btn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+</RelativeLayout>

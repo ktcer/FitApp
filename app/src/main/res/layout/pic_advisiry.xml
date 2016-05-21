@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.login.Payeruse" >
+
+    <include layout="@layout/main_top" />
+
+    <ListView
+        android:id="@+id/list_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@null"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans_30_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edit_pic"
+            style="@style/text_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/send_pic"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:cornerRadius="120dp"
+            fbutton:shadowEnabled="false" />
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

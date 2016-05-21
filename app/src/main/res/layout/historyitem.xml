@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+		android:paddingLeft="10dip"
+        android:id="@+id/date_history"
+        android:background="@color/lightgray"
+        style="@style/text_style_big"
+        android:layout_weight="1"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_weight="1"
+  		android:orientation="horizontal"
+  		android:background="@drawable/border">
+            <ImageView 
+		        android:layout_width="15dip"
+		        android:layout_height="15dip"
+		        android:layout_gravity="center_vertical"
+		        android:id="@+id/image1_historyitem"/>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:textSize="@dimen/text_size_16"
+		        android:textColor="@color/black"
+		        android:layout_weight="1"
+		        android:id="@+id/data1_historyitem"/>
+		    <ImageView
+		        android:layout_marginLeft="10dip"  
+		        android:layout_width="15dip"
+		        android:layout_height="15dip"
+		        android:layout_gravity="center_vertical"
+		        android:id="@+id/image2_historyitem"/>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:textSize="@dimen/text_size_16"
+		        android:textColor="@color/black"
+		        android:layout_weight="1"
+		        android:id="@+id/data2_historyitem"/>
+		    <TextView
+		        android:layout_marginLeft="10dip"  
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_16"
+		        android:textColor="@color/black"
+		        android:layout_weight="1"
+		        android:gravity="center_vertical|left"
+		        android:id="@+id/time_historyitem"/>    
+    </LinearLayout>
+
+    
+</LinearLayout>

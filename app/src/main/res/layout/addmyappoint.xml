@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/head_bg_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/head_bg_blue"
+            android:gravity="center"
+            android:text="新增预约咨询"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/add_my_appoint_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/search_icon" />
+    </LinearLayout>
+-->
+    <include layout="@layout/main_top"/>
+    <fragment
+        android:id="@+id/choose_illness_fragment"
+        android:name="com.cn.fit.ui.patient.mycare.ChooseIllnessFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (c) 2015 The CCP project authors. All Rights Reserved.
+ 
+ 	 Use of this source code is governed by a Beijing Speedtong 
+ 	 Information Technology Co.,Ltd license that can be found in the 
+ 	 LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+ 	 be found in the AUTHORS file in the root of the source tree.
+-->
+<resources>
+
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+
+    <item name="abc_search_url_text_selected" type="color">@*android:color/black</item>
+    <item name="abc_search_url_text_pressed" type="color">@*android:color/black</item>
+    <item name="green_btn_color_disable" type="color">@color/ccp_green_alpha</item>
+
+    <color name="list_divider">#ffdadada</color>
+    <color name="green_btn_color_pressed">#ff298409</color>
+
+    <color name="normal_text_color">#ff353535</color>
+    <color name="light_text_color">#ffd7d7d7</color>
+    <color name="background_dark">#ff000000</color>
+    <color name="bright_foreground_light">@color/background_dark</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="actionbar_selector_color">#4d000000</color>
+    <color name="actionbar_bg_color">#ff2e3132</color>
+    <color name="list_devider_color">#fff2f2f2</color>
+    <color name="progress_horizontal_green">#ff45c01a</color>
+    <color name="hint_text_color">#ff999999</color>
+    <color name="actionbar_devider_color">#ff212324</color>
+    <color name="white_color_disable">#7fffffff</color>
+    <color name="dialog_transparent">#bf000000</color>
+    <color name="ccp_green">#ff00B486</color>
+    <color name="launcher_tab_text_color">#ff636363</color>
+    <color name="launcher_tab_text_color_press">#ffc9c9c9</color>
+    <color name="ccp_green_alpha">#7f00B486</color>
+    <color name="last_msg_tv_color">#ffaaaaaa</color>
+    <color name="footer_text_color">#ff7f7f7f</color>
+    <color name="hint_text_color_dark_bg">#ff484c4c</color>
+    <color name="form_hint_text_color">#ffdddddd</color>
+    <color name="ccp_attentoin_color">#CCCCCC</color>
+    <color name="text_disabled">#ffa8a8a8</color>
+    <color name="common_popup_menu_list_divider">#ff191919</color>
+    <color name="edit_save_btn_color_disable">#ffa8c6ed</color>
+    <color name="edit_save_btn_color_click">#ffffffff</color>
+    <color name="small_line_color">#26000000</color>
+    <color name="action_bar_tittle_color">#ffcfcfcf</color>
+    <color name="red_btn_color_normal">#ffff5454</color>
+    <color name="red_btn_color_pressed">#ffd24242</color>
+    <color name="red_btn_color_disable">#7fff5454</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="dialog_background">#fffbf6f2</color>
+    <color name="dialog_btn_press">#ffece5df</color>
+    <color name="dialog_divider">#ffe8e0da</color>
+    <color name="dialog_btn_normal">#fffbf6f2</color>
+    <color name="dialog_item_normal">#fff7f1ec</color>
+    <color name="dialog_item_press">#ffece5df</color>
+    <color name="dialog_backgroud_full">#88000000</color>
+    <color name="text_desc">#ffbebbb4</color>
+    <color name="text_title">#ff5f5f5f</color>
+    <color name="album_ui_bg">#ff191919</color>
+    <color name="bottom_notepad_panel_bg">#FFF4F4F4</color>
+    <color name="hint_color_white_bg">#ffc5c5c5</color>
+    <color name="devideline_listview">#ffe5e2d4</color>
+    <item name="menu_pressed_color" type="color">@color/small_line_color</item>
+    <color name="bg_bottom_tip">#cc000000</color>
+
+
+</resources>

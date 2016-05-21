@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2015 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<com.cn.fit.ui.chat.common.base.CCPLayoutListenerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ccp_content_fl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/transparent"
+    android:contentDescription="ccp_activity.xml" >
+
+    <Button
+        android:id="@+id/ccp_trans_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ccp_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+</com.cn.fit.ui.chat.common.base.CCPLayoutListenerView>

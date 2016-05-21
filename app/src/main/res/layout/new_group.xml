@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    style="@style/CCPScroll"
+    android:background="@color/gray_second"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/CCPBody"
+        android:paddingTop="10.0dip" >
+
+        <com.cn.fit.ui.chat.common.base.CCPClearEditText
+            android:id="@+id/group_name"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_name_hint"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="false" >
+
+            <requestFocus />
+        </com.cn.fit.ui.chat.common.base.CCPClearEditText>
+
+        <com.cn.fit.ui.chat.common.base.CCPClearEditText
+            android:id="@+id/group_notice"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_notice_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <Spinner
+            android:id="@+id/str_group_permission_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/str_group_permission_spinner"
+            android:visibility="gone" />
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/str_group_permission_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="@string/str_group_permission_spinner"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/lightgreen"
+            fbutton:shadowEnabled="false" />
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="@string/app_button_create"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:shadowEnabled="false" />
+    </LinearLayout>
+
+</ScrollView>

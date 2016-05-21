@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+<!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/on_demond_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blueLight"
+            android:text="点   播"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/live_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:text="直   播"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+-->
+    <ListView
+        android:id="@+id/video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+	    android:listSelector="@android:color/transparent">
+    </ListView>
+
+</LinearLayout>

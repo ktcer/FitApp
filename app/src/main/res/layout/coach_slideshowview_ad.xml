@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <!-- 主题图片 -->
+    <com.cn.fit.util.SlideShowView
+        android:id="@+id/slideshowViewad"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="180dp"/>
+
+</LinearLayout>

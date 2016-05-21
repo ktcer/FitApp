@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include layout="@layout/main_top"
+        android:id="@+id/communication_title_bar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/communication_title_bar_layout"
+        android:background="@color/trans_30_blue"
+         >
+
+        <TextView
+            android:id="@+id/my_post"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/blue_second"
+            android:text="我的帖子" />
+        <View 
+            android:layout_height="match_parent"
+            android:background="@color/blue_second"
+            android:layout_width="1dip"/>
+        
+        <TextView
+            android:id="@+id/new_post"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/blue_second"
+            android:text="发表新帖" />
+    </LinearLayout>
+     <ListView
+        android:id="@+id/my_moment_post_lv"
+        android:layout_below="@id/post"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+	    android:listSelector="@android:color/transparent">
+    
+    </ListView>
+    </RelativeLayout>

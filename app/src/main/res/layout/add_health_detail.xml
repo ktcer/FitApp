@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/list_biankuang" >
+
+        <LinearLayout
+             android:id="@+id/add_detail_health_info"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+          
+            android:orientation="vertical" >
+            
+               <TextView
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" 
+                android:text=""/>
+
+           <!--  <EditText
+                android:id="@+id/add_detail_health_info_key"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/add_detail_health_info_value"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_second"
+        android:fadingEdge="none"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/item_pic"
+                style="@style/settings_item_layout_single"
+                android:layout_width="match_parent"
+                android:layout_height="90dip"
+                android:background="@drawable/setting_item_selector"
+                android:gravity="center_vertical"
+                android:padding="10dip" >
+
+                <com.cn.fit.util.CircleImageView
+                    android:id="@+id/pic"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:layout_toLeftOf="@id/arrow"
+                    app:border_color="@color/whitesmoke"
+                    app:border_width="2dp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dip"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="@string/avatar_desc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    android:id="@+id/item_mytel"
+                    style="@style/settings_item_layout_single"
+                    android:layout_marginTop="@dimen/btn_topbar_paddingHorizontal"
+                    app:item_accessoryType="none"
+                    app:item_showDivider="true"
+                    app:item_titleText="@string/person_tel" />
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    style="@style/settings_item_layout_single"
+                    app:item_accessoryType="arrow"
+                    app:item_showDivider="false"
+                    app:item_titleText="@string/person_name" >
+
+                    <EditText
+                        android:id="@+id/item_myname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SmallListHeight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/trans_setting_item_selector"
+                        android:focusable="false"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="40dip"
+                        android:paddingLeft="80dip"
+                        android:textColor="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_14" />
+                </com.cn.fit.ui.chat.common.view.SettingItem>
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    style="@style/settings_item_layout_single"
+                    android:layout_marginTop="@dimen/btn_topbar_paddingHorizontal"
+                    app:item_accessoryType="arrow"
+                    app:item_showDivider="true"
+                    app:item_titleText="@string/person_sex" >
+
+                    <com.cn.fit.util.superpicker.CustomNumberPicker
+                        android:id="@+id/item_mysex"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SmallListHeight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/trans_setting_item_selector"
+                        android:focusable="false"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="40dip"
+                        android:paddingLeft="80dip"
+                        android:textColor="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_14" />
+                </com.cn.fit.ui.chat.common.view.SettingItem>
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    style="@style/settings_item_layout_single"
+                    app:item_accessoryType="arrow"
+                    app:item_showDivider="true"
+                    app:item_titleText="@string/person_birth" >
+
+                    <com.cn.fit.util.superpicker.CustomDatePicker
+                        android:id="@+id/item_mybirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SmallListHeight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/trans_setting_item_selector"
+                        android:focusable="false"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="40dip"
+                        android:paddingLeft="80dip"
+                        android:textColor="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_14" />
+                </com.cn.fit.ui.chat.common.view.SettingItem>
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    style="@style/settings_item_layout_single"
+                    app:item_accessoryType="arrow"
+                    app:item_showDivider="true"
+                    app:item_titleText="@string/person_tall" >
+
+                    <com.cn.fit.util.superpicker.CustomNumberPickerDouble
+                        android:id="@+id/item_mytall"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SmallListHeight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/trans_setting_item_selector"
+                        android:focusable="false"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="40dip"
+                        android:paddingLeft="80dip"
+                        android:textColor="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_14" />
+                </com.cn.fit.ui.chat.common.view.SettingItem>
+
+                <com.cn.fit.ui.chat.common.view.SettingItem
+                    style="@style/settings_item_layout_single"
+                    app:item_accessoryType="arrow"
+                    app:item_showDivider="false"
+                    app:item_titleText="@string/person_weight" >
+
+                    <com.cn.fit.util.superpicker.CustomNumberPickerDouble
+                        android:id="@+id/item_myweight"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SmallListHeight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/trans_setting_item_selector"
+                        android:focusable="false"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="40dip"
+                        android:paddingLeft="80dip"
+                        android:textColor="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_14" />
+                </com.cn.fit.ui.chat.common.view.SettingItem>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

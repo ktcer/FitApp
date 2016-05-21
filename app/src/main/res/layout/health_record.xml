@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+    <com.cn.fit.util.refreshlistview.XListView
+        android:id="@+id/lv_health_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </com.cn.fit.util.refreshlistview.XListView>
+
+</LinearLayout>

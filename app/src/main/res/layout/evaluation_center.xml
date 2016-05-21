@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/layout_test_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/lightgray"
+                        android:paddingBottom="8dip"
+                        android:paddingTop="8dip" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="2dip"
+                        android:text="测评结果 "
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="30dip"
+                        android:layout_weight="1"
+                        android:background="@color/lightgray"
+                        android:paddingBottom="8dip"
+                        android:paddingTop="8dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_test_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:lineSpacingMultiplier="1.5"
+                        android:singleLine="false"
+                        android:text="您的测评结果为：" />
+
+                    <TextView
+                        android:id="@+id/tv_test_result"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:lineSpacingMultiplier="1.5"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textSize="@dimen/text_size_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/lightgray"
+                        android:paddingBottom="8dip"
+                        android:paddingTop="8dip" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="2dip"
+                        android:text="温馨提示 "
+                        android:textColor="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="30dip"
+                        android:layout_weight="1"
+                        android:background="@color/lightgray"
+                        android:paddingBottom="8dip"
+                        android:paddingTop="8dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_test_warming"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:lineSpacingMultiplier="1.5"
+                    android:singleLine="false"
+                    android:text="" />
+
+                <com.cn.fit.util.FButton
+                    android:id="@+id/btn_choose_assist"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="10dip"
+                    android:minHeight="@dimen/demo_button_min_height"
+                    android:minWidth="@dimen/demo_button_min_width"
+                    android:text="选择健康秘书"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    fbutton:buttonColor="@color/blue_second"
+                    fbutton:shadowEnabled="false" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/evaluationList_evaluationCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

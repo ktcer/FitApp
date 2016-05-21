@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- Messages IDs -->
+  <item type="id" name="auto_focus"/>
+  <item type="id" name="decode"/>
+  <item type="id" name="decode_failed"/>
+  <item type="id" name="decode_succeeded"/>
+  <item type="id" name="encode_failed"/>
+  <item type="id" name="encode_succeeded"/>
+  <item type="id" name="launch_product_query"/>
+  <item type="id" name="quit"/>
+  <item type="id" name="restart_preview"/>
+  <item type="id" name="return_scan_result"/>
+  <item type="id" name="search_book_contents_failed"/>
+  <item type="id" name="search_book_contents_succeeded"/>
+    
+	<item type="id" name="btnStyle">false</item>
+	<item type="id" name="txtView">false</item>
+	<item type="id" name="common_title">false</item>
+	<item type="id" name="common_function">false</item>
+	<item type="id" name="titleText">false</item>
+    <item type="id" name="titleRightButton">false</item>
+    <!-- zhangzefeng start -->
+    <item type="id" name="editTextMainTransferStart">false</item>
+    <item type="id" name="editTextMainTransferEnd">false</item>
+    <item type="id" name="buttonMainTransferChange">false</item>
+    <item type="id" name="buttonMainTransfer">false</item>
+    <item type="id" name="editTextMainStation">false</item>
+    <item type="id" name="buttonMainStation">false</item>
+    <item type="id" name="editTextMainLine">false</item>
+    <item type="id" name="buttonMainLine">false</item>
+    <item type="id" name="linearLayoutNavi">false</item>
+    <item type="id" name="buttonNaviLine">false</item>
+    <item type="id" name="buttonNaviTransfer">false</item>
+    <item type="id" name="buttonNaviStation">false</item>
+    <item type="id" name="textViewDetailLineTop">false</item>
+    <item type="id" name="listViewDetailLine">false</item>
+    <item type="id" name="relativeLayoutTitle">false</item>
+    <!-- zhangzefeng end -->
+    
+    <item name="main_tab_root" type="id"/>
+    <item name="main_tab_navigation_img" type="id"/>
+    <item name="home" type="id"/>
+    <item name="title" type="id"/>
+    <item name="action_bar_activity_content" type="id"/>
+    <item name="action_menu_divider" type="id"/>
+    <item name="action_menu_presenter" type="id"/>
+    <item name="chatting_checkbox" type="id"/>
+    <item name="chatting_content_area" type="id"/>
+    <item name="chatting_maskview" type="id"/>
+    <item name="content" type="id"/>
+    <item name="fab_label" type="id"/>
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="PayRidioButton">
+		<attr name="title" format="reference|string" />
+		<attr name="logo" format="reference|color" />
+		<attr name="desc" format="reference|string" />
+		<attr name="checked" format="boolean" />
+		<attr name="radio" format="reference"/>
+	</declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer">
+        </attr>
+    </declare-styleable>
+	<!-- Standard orientation constant. -->
+    <attr name="orientation">
+        <!-- Defines an horizontal widget. -->
+        <enum name="horizontal" value="0" />
+        <!-- Defines a vertical widget. -->
+        <enum name="vertical" value="1" />
+    </attr>
+	
+	<declare-styleable name="PayRidioGroup">
+	    <!-- The id of the child radio button that should be checked by default
+             within this radio group. -->
+        <attr name="checkedButton" format="integer" />
+        <!-- Should the radio group be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.  The default is
+             vertical. -->
+        <attr name="orientation" />
+	</declare-styleable>
+    
+	<declare-styleable name="TouchListView">
+		<attr name="normal_height" format="dimension" />
+		<attr name="expanded_height" format="dimension" />
+		<attr name="grabber" format="reference" />
+		<attr name="dragndrop_background" format="color" />
+		
+ 		<attr name="remove_mode">
+			<enum name="none" value="-1" />
+			<enum name="fling" value="0" />
+			<enum name="slide" value="1" />
+			<enum name="slideRight" value="1" />
+			<enum name="slideLeft" value="2" />
+		</attr>
+	</declare-styleable>
+	
+	 <declare-styleable name="ScrollLayout">
+        <attr name="labelerClass" format="string"/>
+        <attr name="labelerFormat" format="string"/>
+        <attr name="childWidth" format="dimension"/>
+        <attr name="childHeight" format="dimension"/>
+    </declare-styleable>
+    
+        <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float"/>
+        <attr name="unselectedSaturation" format="float"/>
+        <attr name="unselectedScale" format="float"/>
+        <attr name="maxRotation" format="integer"/>
+        <attr name="scaleDownGravity" format="float"/>
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+    
+     <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="colors" format="color|reference" />
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+        <attr name="selectedIndex" format="integer" />
+    </declare-styleable>
+    
+         <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="values" format="reference" />
+        <attr name="android:ellipsize" />
+        <attr name="android:marqueeRepeatLimit" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="sideItems" format="integer" />
+    </declare-styleable>
+<!--       <declare-styleable name="CircleLayout">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="isRotating" format="boolean" />
+        <attr name="speed" format="integer" />
+    </declare-styleable> -->
+
+    
+    <declare-styleable name="MultipleSelectionButton">
+        <attr name="ascv_unselectedTextColor" format="reference"/>
+        <attr name="ascv_unselectedColor" format="reference"/>
+        <attr name="ascv_selectedColor" format="reference"/>
+        <attr name="ascv_selectedTextColor" format="reference"/>
+        <attr name="ascv_items" format="reference"/>
+        <attr name="ascv_values" format="reference"/>
+        <attr name="ascv_equalWidth" format="boolean"/>
+        <attr name="ascv_stretch" format="boolean"/>
+        <attr name="ascv_defaultSelection" format="integer"/>
+        <attr name="ascv_identifier" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="name" format="string" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FButton">
+        <attr name="cornerRadiusF" format="dimension" />
+        <attr name="shadowEnabled" format="boolean" />
+        <attr name="buttonColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowHeight" format="dimension" />
+         />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AppPanel">
+        <attr name="dot_count" format="dimension" />
+        <attr name="dot_selected" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension"/>
+        <attr name="emojiconTextStart" format="integer"/>
+        <attr name="emojiconTextLength" format="integer"/>
+        <attr name="emojiconUseSystemDefault" format="boolean"/>
+    </declare-styleable>
+    	 <declare-styleable name="MaskLayout">
+        <attr name="foreground" format="reference" />
+        <attr name="content_margin" format="dimension" />
+        <attr name="content_marginLeft" format="dimension" />
+        <attr name="content_marginRight" format="dimension" />
+        <attr name="content_marginTop" format="dimension" />
+        <attr name="content_marginBottom" format="dimension" />
+    </declare-styleable>
+    <attr name="horizontalPickerStyle" format="reference" />
+        <declare-styleable name="setting_info">
+        <attr name="item_titleText" format="string" />
+        <attr name="item_detailText" format="string" />
+        <attr name="item_accessoryType">
+            <enum name="none" value="0" />
+            <enum name="arrow" value="1" />
+            <enum name="switchbutton" value="2" />
+            <enum name="radio" value="3" />
+        </attr>
+        <attr name="item_showDivider" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="form_input">
+        <attr name="form_layout" format="reference" />
+        <attr name="form_title" format="string" />
+        <attr name="form_hint" format="string" />
+    </declare-styleable>
+        <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+    </declare-styleable>
+        <declare-styleable name="CheckBox">
+        <attr name="carbon_checkColor" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RadioButton">
+        <attr name="carbon_radioColor" format="reference|color" />
+    </declare-styleable>
+    	<declare-styleable name="FlowLayout">
+		<attr name="android:gravity" />
+	</declare-styleable>
+	<declare-styleable name="FlowLayout_Layout">
+		<attr name="android:layout_gravity" />
+	</declare-styleable>
+	    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+        <attr name="colorTheme" format="reference|color"/>
+    <attr name="colorThemeDark" format="reference|color"/>  
+    <declare-styleable name="GFFloatingActionButton">
+        <attr name="fabColorPressed" format="color"/>
+        <attr name="fabColorNormal" format="color"/>
+        <attr name="fabIcon" format="reference"/>
+        <attr name="fabTitle" format="string"/>
+    </declare-styleable> 
+     <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+
+</resources>

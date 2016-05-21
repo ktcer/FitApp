@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/device_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/device_title_bar_layout"
+        layout="@layout/main_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="20dip"
+            android:id="@+id/recorder_ani"
+            android:layout_width="300dip"
+            android:layout_height="180dip"
+            android:background="@drawable/recorder_ani"
+            android:scaleType="center" />
+        <TextView
+            android:id="@+id/timerView"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="00:00:00"
+            android:textSize="50dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/Btn_Record"
+                style="@style/text_style"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="45dip"
+                android:layout_margin="10dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="开始录音"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/fbutton_color_emerald"
+                app:shadowEnabled="false" />
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/Btn_playback"
+                style="@style/text_style"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="45dip"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dip"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="开始试听"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/fbutton_color_emerald"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

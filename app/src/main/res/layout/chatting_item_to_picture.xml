@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChattingUIContent" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatting_user_tv"
+            style="@style/ChattingUISenderText"
+            android:layout_gravity="right"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/chatting_state_iv"
+                style="@style/ChattingUIState"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/chatting_click_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_img_bg"
+                 >
+                <ImageView
+                    android:id="@+id/chatting_content_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200.0dip"
+                    android:maxHeight="230.0dip"/>
+                <ImageView
+                    android:id="@+id/img_gif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_gif"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/chatting_content_mask_iv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip" />
+
+                <LinearLayout
+                    android:id="@+id/uploading_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/uploading_pb"
+                        style="@style/smallCustomProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/uploading_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/chatting_item_avatar_to" />
+
+</LinearLayout>

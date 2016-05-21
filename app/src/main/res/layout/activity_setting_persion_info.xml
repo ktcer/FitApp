@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/com.cn.aihu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.cn.fit.ui.chat.common.base.CCPFormInputView
+                android:id="@+id/nickname_tv"
+                style="@style/CCPFormInputView"
+                form:form_hint="@string/login_prompt_nickname"
+                form:form_layout="@layout/ccp_form_input_clear_et_view"
+                form:form_title="@string/login_prompt_nickname" />
+
+            <RadioGroup
+                android:id="@+id/sex_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/SmallListHeight"
+                android:orientation="horizontal"
+                style="@style/CCPFontPreferenceLarge"
+                android:checkedButton="@+id/male">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_small"
+                    android:text="@string/settings_female" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/SmallListHeight">
+                <TextView
+                    style="@style/CCPFormInputTitleTextView"
+                    android:text="@string/settings_birth"/>
+                <TextView
+                    android:id="@+id/birth_tv"
+                    style="@style/CCPFormInputEditText"
+                    android:onClick="onBirthClick" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                style="@style/CCPBigRedButton"
+                android:layout_marginTop="16dp"
+                android:text="@string/dialog_btn_confim" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:gravity="right" >
+	<TextView 
+	    android:id="@+id/time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_16"
+	    android:background="@null"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="5dp"
+	    />
+	<TextView 
+	    android:id="@+id/content"
+	    android:gravity="center_vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:maxWidth="200dp"
+		style="@style/text_style_nosingleLine"
+		android:background="@drawable/chatto_bg_normal"
+	    />		
+</LinearLayout>

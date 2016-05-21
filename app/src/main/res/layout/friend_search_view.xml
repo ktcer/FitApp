@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/friend_list_myImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/myres_myhelp" />
+
+        <LinearLayout
+            android:id="@+id/lefttop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/friend_list_myImg" >
+
+            <TextView
+                android:id="@+id/myStatusImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="李晓杰"
+                style="@style/text_style"/>
+
+            <TextView
+                android:id="@+id/friend_list_myName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_weight="1.0"
+                android:text="护士长"
+                style="@style/text_style"/>
+            
+            <ImageView 
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="10dip"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/myStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/friend_list_myImg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/friend_list_myImg"
+            android:layout_weight="1.0"
+            android:text="关注:200|文章:5"
+            android:textSize="12dip"
+            android:textColor="@color/font_gray"
+            android:layout_marginBottom="8dip"
+            style="@style/text_style"/>
+    </RelativeLayout>
+
+</LinearLayout>

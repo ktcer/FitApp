@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecdemo="http://schemas.android.com/apk/com.cn.aihu"
+    style="@style/NavPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:background="#E4E3E3"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip"
+        android:orientation="vertical" >
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_serverIP"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            android:layout_marginTop="@dimen/LargerPadding"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/settings_server_address" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_appkey"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/settings_appkey" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_token"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            ecdemo:item_showDivider="false"
+            ecdemo:item_titleText="@string/settings_apptoken" />
+
+    </LinearLayout>
+
+</ScrollView>

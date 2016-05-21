@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B0000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/popup_window_et_search"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="8dp"
+            android:paddingLeft="8dp"
+            android:hint="请输入"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+        
+        <LinearLayout 
+            android:layout_height="40dp"
+			android:layout_width="0px"
+			android:layout_weight="0.8"
+			android:orientation="vertical"
+			android:background="@drawable/bg_search"
+			android:gravity="center">
+            <ImageView 
+	            android:id="@+id/cancel_edittext_iv"
+				android:layout_height="30dp"
+				android:layout_width="30dp"
+				android:src="@drawable/txt_clear"	
+				android:visibility="gone"	
+				/>
+        </LinearLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/popup_window_tv_search"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@drawable/bg_top_text"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/popup_window_v_alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    
+        <com.cn.fit.util.refreshlistview.XListView
+        android:id="@+id/popup_window_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:visibility="gone"
+	    android:listSelector="@android:color/transparent">
+    </com.cn.fit.util.refreshlistview.XListView>
+
+
+</LinearLayout>

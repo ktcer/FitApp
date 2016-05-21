@@ -1,0 +1,12 @@
+<TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactitem_catalog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/SmallerPadding"
+    android:paddingBottom="@dimen/SmallerPadding"
+    android:paddingLeft="@dimen/SmallPadding"
+    android:textStyle="bold"
+    android:visibility="gone"
+    android:background="#E4E3E3"
+    android:textColor="@color/hint_text_color"
+    android:textSize="@dimen/HintTextSize" />

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_item_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/LargestListHeight"
+    android:minHeight="@dimen/LargestListHeight"
+    android:background="@drawable/list_item_selector"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/NormalAvatarWrapSize"
+        android:layout_height="@dimen/NormalAvatarWrapSize"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/SmallPadding"
+        android:layout_marginRight="@dimen/SmallerPadding">
+
+        <ImageView
+            android:id="@+id/group_card_item_avatar_iv"
+            android:layout_width="@dimen/NormalAvatarSize"
+            android:layout_height="@dimen/NormalAvatarSize"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="@dimen/SmallPadding"
+        android:layout_marginTop="-1.5dip"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+            android:id="@+id/group_card_item_nick"
+            style="@style/CCPFontTitleInList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="name_tv"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/NormalTextSize" />
+
+        <TextView
+            android:id="@+id/account"
+            style="@style/CCPFontTipInList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.5dip"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:tag="account"
+            android:text="account"
+            android:textColor="#ff888888"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contact_operation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/SmallPadding"
+        android:paddingRight="@dimen/SmallPadding"
+        android:layout_marginRight="5.0dip"
+        android:textColor="@color/operation_btn_color_selector"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        android:text="@string/str_group_remove" />
+
+    <LinearLayout
+        android:id="@+id/operation_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14.0dip"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="68.0dip"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/speak_btn"
+            android:layout_width="wrap_content"
+            style="@style/Group_member_operation"
+            android:duplicateParentState="false"
+            android:layout_marginTop="1.0dip"
+            android:focusable="false"
+            android:clickable="true"
+            android:text="@string/str_group_speak_disenable"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/remove_btn"
+            style="@style/Group_member_operation"
+            android:text="@string/str_group_remove"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="1.0dip"
+            android:duplicateParentState="false"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

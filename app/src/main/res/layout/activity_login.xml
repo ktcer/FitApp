@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" />
+
+    <ImageView
+        android:id="@+id/image_informationManage"
+        android:layout_marginTop="20dip"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon"
+        />
+
+    <LinearLayout
+        android:id="@+id/login_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/userId_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <!-- android:ems="10"表示EditText内最多只显示10个字符，超出不显示 -->
+                <!-- android:singleLine="true"表示不能全部显示时，后面用“…”来表示 -->
+
+                <EditText
+                    android:id="@+id/login_edtId"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/idtxthint"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_18" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/login_more_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/login_more_up" />
+            </LinearLayout>
+
+            <!-- 横线 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CACDD1" />
+
+            <EditText
+                android:id="@+id/login_edtPwd"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@null"
+                android:hint="@string/pwdtxthint"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <!--
+            <com.cn.aihu.util.FButton
+            android:id="@+id/login_btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="@string/loginbtntext"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:cornerRadius="1dp"
+            fbutton:shadowEnabled="false" />
+        -->
+
+        <com.cn.fit.util.progressbutton.iml.ActionProcessButton
+            android:id="@+id/login_btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/loginbtntext"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            custom:pb_colorComplete="@color/lightgreen"
+            custom:pb_colorNormal="@color/blue_second"
+            custom:pb_colorPressed="@color/progressbutton_presscolor"
+            custom:pb_colorProgress="@color/fbutton_color_sun_flower"
+            custom:pb_textComplete="@string/login_Success"
+            custom:pb_textProgress="@string/login_Loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/login_txtForgotPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/forgot_pwd"
+        android:textColor="@color/blue_second"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

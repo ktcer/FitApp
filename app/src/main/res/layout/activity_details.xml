@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".ActivitySetNotificationTime" >
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <TimePicker
+                    android:id="@+id/alarm_details_time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_second"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/divider2"
+                    style="@style/Divider"
+                    android:layout_marginTop="10dip" />
+
+                <LinearLayout
+                    android:id="@+id/alarm_details_repeat_weekly_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.8" >
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_monday_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="一"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_tuesday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="二"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_wednesday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="三"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_thursday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="四"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_friday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="五"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_saturday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="六"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+
+                    <com.cn.fit.util.FButton
+                        android:id="@+id/alarm_details_repeat_sunday_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="日"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fbutton:buttonColor="@color/lightgray"
+                        fbutton:shadowEnabled="false" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider1"
+                    style="@style/Divider" 
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/back_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.cn.fit.util.FButton
+                    android:id="@+id/Btn_playback_vioce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:minHeight="@dimen/demo_button_min_height"
+                    android:minWidth="@dimen/demo_button_min_width"
+                    android:text="音频回放"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    fbutton:buttonColor="@color/fbutton_color_emerald"
+                    fbutton:shadowEnabled="false" />
+
+                <FrameLayout
+                    android:id="@+id/recoder_play_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" >
+
+                    <SurfaceView
+                        android:id="@+id/recoder_play"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <ImageView
+                        android:id="@+id/playVideo1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play_action" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/recoder_tx_fl"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dip"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="center"
+                android:text=""
+                android:visibility="visible" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_delete"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:minHeight="@dimen/diary_remind_item_edit"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="编辑"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                fbutton:buttonColor="@color/gray_third"
+                fbutton:shadowEnabled="false" />
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center"
+                android:minHeight="@dimen/diary_remind_item_edit"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="删除"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                fbutton:buttonColor="@color/red"
+                fbutton:shadowEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- <LinearLayout -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="fill_parent" -->
+<!-- android:gravity="center_horizontal|center_vertical" > -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/playVideo1" -->
+<!-- android:layout_width="32dp" -->
+<!-- android:layout_height="32dp" -->
+<!-- android:src="@drawable/ic_play_action" /> -->
+<!-- </LinearLayout> -->
+
+
+<!-- <FrameLayout -->
+<!-- android:id="@+id/recoder_play_fl" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="200dip" -->
+<!-- android:layout_margin="10dp" -->
+<!-- android:layout_marginLeft="20dp" -->
+<!-- android:layout_marginRight="20dp" -->
+<!-- android:layout_marginTop="20dip" -->
+<!-- android:visibility="visible" > -->
+
+
+<!-- <SurfaceView -->
+<!-- android:id="@+id/recoder_play" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="fill_parent" /> -->
+
+
+<!-- <LinearLayout -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="fill_parent" -->
+<!-- android:gravity="center_horizontal|center_vertical" > -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/playVideo1" -->
+<!-- android:layout_width="32dp" -->
+<!-- android:layout_height="32dp" -->
+<!-- android:src="@drawable/ic_play_action" /> -->
+<!-- </LinearLayout> -->
+<!-- </FrameLayout> -->

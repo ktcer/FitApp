@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include 
+	    layout="@layout/main_top"/>
+
+    <ListView 
+       android:id="@+id/list"
+       android:layout_weight="19"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:listSelector="@null" 
+       android:transcriptMode="alwaysScroll" 
+       android:cacheColorHint="#00000000" 
+       android:divider="@null" 
+       ></ListView>
+
+   <LinearLayout 
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:background="@color/trans_30_blue"
+       >
+   
+       <EditText 
+           android:id="@+id/edit"
+           android:layout_width="0dip"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           style="@style/text_style"
+           />
+       
+       <com.cn.fit.util.FButton
+            android:id="@+id/send"
+            android:layout_marginLeft="20dp"
+           android:layout_width="0dip"
+           android:layout_weight="0.5"
+           android:layout_height="40dip"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:cornerRadius="120dp"
+            fbutton:shadowEnabled="false" />
+       
+   </LinearLayout>
+
+</LinearLayout>

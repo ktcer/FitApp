@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" /> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/basicInfo_personlaData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/trans_30_blue"
+            android:textColor="@color/blue_second"
+            android:text="基本信息" 
+            style="@style/text_large_style">
+        </Button>
+
+        <Button
+            android:id="@+id/HealthData_personalData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="健康档案"
+            style="@style/text_large_style"/>
+        
+          <Button
+            android:id="@+id/intervene_scheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="干预方案"
+            style="@style/text_large_style"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/lightgray"/>
+    
+	<android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+    
+<!--  
+    <LinearLayout 
+        android:id="@+id/layout_personnalData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:orientation="vertical"
+        android:background="@drawable/list_biankuang">
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name_personalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sex_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/brithday_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/province_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/nation_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/people_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/family_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+        <TextView 
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/occupytion_PersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"/>
+    </LinearLayout>
+    <com.cn.aihu.util.refreshlistview.XListView
+        android:id="@+id/lv_basicData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+	    android:listSelector="@android:color/transparent" >
+    </com.cn.aihu.util.refreshlistview.XListView>
+-->
+</LinearLayout>

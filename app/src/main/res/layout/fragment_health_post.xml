@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:background="@color/gray_second">
+     <include layout="@layout/main_top" />
+    
+     <LinearLayout
+        android:id="@+id/title_ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dip"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="20dip"
+            android:text="haha"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/much_post_tv"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="20dip"
+            android:text="更多"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    
+	<GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:paddingTop="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

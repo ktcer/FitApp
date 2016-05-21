@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    android:background="@color/gray_second"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_marginTop="@dimen/loginingdlg_top_margin"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:paddingTop="10dip" >
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/desc" -->
+<!--                 android:layout_width="70dp" -->
+<!--                 android:layout_height="70dp" -->
+<!--                 android:layout_marginLeft="20dp" -->
+<!--                 android:layout_marginTop="5dp" -->
+<!--                 android:contentDescription="desc" /> -->
+
+			<com.cn.fit.util.CircleImageView
+                android:id="@+id/desc"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="desc"
+                android:src="@drawable/default_user_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:paddingTop="14dp" >
+
+                <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                    android:id="@+id/contact_nameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dip"
+                    android:layout_marginLeft="16dp"
+                    android:singleLine="true"
+                    android:text="{name}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+				<LinearLayout 
+				    android:orientation="horizontal"
+				    android:layout_height="wrap_content"
+				    android:layout_width="fill_parent">
+                <TextView
+                    android:id="@+id/contact_numer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/text_size_14" />
+                 <ImageView
+                     android:visibility="gone"
+                     android:layout_width="30dip"
+                     android:layout_height="30dip"
+                     android:padding="6dip"
+                     android:layout_marginLeft="22dp"
+                     android:src="@drawable/iconfont_shengyutianshu"/>
+                     
+                 <TextView
+                     android:visibility="gone"
+                    android:id="@+id/contact_remaintime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+		<com.cn.fit.ui.chat.common.view.SettingItem
+                    android:id="@+id/txt_assist_page"
+                    style="@style/settings_item_layout_single"
+                    android:layout_marginTop="@dimen/LargerPadding"
+                    app:item_showDivider="false"
+                    app:item_titleText="教练主页" />
+        
+            <com.cn.fit.util.FButton
+            android:id="@+id/entrance_chat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="咨询教练"
+            android:layout_marginLeft="@dimen/LargePadding" 
+            android:layout_marginRight="@dimen/LargePadding"
+            android:layout_marginTop="@dimen/LargestPadding" 
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/blue_second"
+            fbutton:cornerRadius="1dp"
+            fbutton:shadowEnabled="false" />
+            
+            <com.cn.fit.util.FButton
+	            android:id="@+id/ismaster"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:minHeight="@dimen/demo_button_min_height"
+	            android:minWidth="@dimen/demo_button_min_width"
+	            android:text="@string/bind_master"
+	            android:layout_marginLeft="@dimen/LargePadding" 
+	            android:layout_marginRight="@dimen/LargePadding"
+	            android:layout_marginTop="@dimen/LargestPadding" 
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/text_size_16"
+	            fbutton:buttonColor="@color/white"
+	            fbutton:cornerRadius="1dp"
+	            fbutton:shadowEnabled="false" />
+                        
+    </LinearLayout>
+
+</ScrollView>

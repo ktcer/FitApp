@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:orientation="vertical" 
+    android:paddingBottom="1dip">
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:fadingEdge="none"
+		android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.cn.fit.ui.chat.common.view.SettingItem
+                android:id="@+id/txt_helpcenter"
+                style="@style/settings_item_layout_single"
+                android:layout_marginTop="@dimen/LargerPadding"
+                app:item_showDivider="true"
+                app:item_titleText="帮助中心" />
+
+            <com.cn.fit.ui.chat.common.view.SettingItem
+                android:id="@+id/txt_aboutus"
+                style="@style/settings_item_layout_single"
+                app:item_showDivider="false"
+                app:item_titleText="关于我们" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dip"
+                android:gravity="center" >
+
+                <com.cn.fit.util.FButton
+                    android:id="@+id/unload_informationMange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:minHeight="@dimen/demo_button_min_height"
+                    android:minWidth="@dimen/demo_button_min_width"
+                    android:text="退出登录"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    fbutton:buttonColor="@color/red"
+                    fbutton:shadowEnabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

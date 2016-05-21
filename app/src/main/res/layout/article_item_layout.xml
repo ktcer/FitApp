@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/essay_title_tv"
+        style="@style/text_style"
+        android:layout_width="0dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="1"
+        android:text="文章名称" />
+
+    <TextView
+        android:id="@+id/essay_date_tv"
+        style="@style/text_style"
+        android:layout_width="0dip"
+        android:layout_height="50dip"
+        android:layout_weight="1"
+        android:text="2015-05-04" />
+
+</LinearLayout>

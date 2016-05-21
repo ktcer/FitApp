@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/illness_lv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/illness_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/illness_list_myImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/setting_myaccount" />
+
+        <LinearLayout
+            android:id="@+id/illness_lefttop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/illness_list_myImg" >
+
+            <TextView
+                android:id="@+id/illness_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="老王"
+                style="@style/text_style"/>
+
+            <TextView
+                android:id="@+id/illness_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/illness_name"
+                android:layout_weight="0.3"
+                android:text="65岁"
+                style="@style/text_style"/>
+            
+                <TextView
+                android:id="@+id/ill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:text="高血压"
+                style="@style/text_style"/>
+                
+
+                
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+
+
+
+</LinearLayout>

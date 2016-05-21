@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="settings_item">
+        <item>我的账户</item>
+        <item>消息中心</item>
+        <item>设置</item>
+        <item>帮助</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="departments">
+        <item>跌倒科</item>
+        <item>心脑血管科</item>
+        <item>老年痴呆科</item>
+        <item>肾病科</item>
+        <item>外科</item>
+    </string-array>
+    <string-array name="sorting">
+        <item>智能排序</item>
+        <item>级别排序</item>
+    </string-array>
+    
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    
+   <string-array name="nurseType">
+        <item>选择类别</item>
+        <item>收藏</item>
+        <item>关注</item>
+    </string-array>
+    
+   <string-array name="subscribePaperType">
+        <item>选择类别</item>
+        <item>高血压</item>
+        <item>心血管</item>
+        <item>白血病</item>
+    </string-array>
+    
+   <string-array name="chartdate">
+        <item>前7条</item>
+        <item>最近7条</item>
+        <item>后7条</item>
+    </string-array>
+    
+   <string-array name="familytype">
+        <item>家庭相册</item>
+        <!--<item>监测数据</item>-->
+        <item>地理位置</item>
+        <item>报警信息</item>
+    </string-array>
+    
+   <string-array name="choseDepartment">
+       <item>内科</item>
+       <item>外科</item>
+       <item>营养</item>
+       <item>健身</item>
+       <item>心理</item>
+       <item>其他</item>
+   </string-array>
+   
+   <string-array name="bloodsugar1">
+        <item>凌晨</item>
+        <item>空腹</item>
+        <item>早餐后</item>
+        <item>午餐前</item>
+   </string-array>
+   <string-array name="bloodsugar2">
+        <item>午餐后</item>
+        <item>晚餐前</item>
+        <item>晚餐后</item>
+        <item>睡前</item>
+    </string-array>
+    
+    <string-array name="chat_menu">
+        <item>删除</item>
+        <item>复制消息</item>
+    </string-array>
+    <string-array name="group_join_model">
+        <item>默认直接加入</item>
+        <item>需要身份验证</item>
+    </string-array>
+    
+    <!-- searchView查询提示 -->
+    <string-array name="query_suggestions">
+        <item>测试任维政</item>
+        <item>测试崔岩松</item>
+        <item>测试陈科良</item>
+        <item>测试张晓欢</item>
+        <item>测试旷铁成</item>
+        <item>测试吴泽鹏</item>
+    </string-array>
+</resources>

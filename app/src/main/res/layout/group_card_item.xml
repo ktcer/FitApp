@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+
+
+    <TextView
+        android:id="@+id/card_item_tv"
+        style="@style/CCPFontTitleInList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/NormalListHeight"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/address_history_group_card" />
+    <ImageView
+        android:id="@+id/card_scan_code"
+        style="@style/CCPFontTitleInList"
+        android:layout_width="@dimen/NormalListHeight"
+        android:layout_height="@dimen/NormalListHeight"
+        android:background="@drawable/list_item_selector"
+        android:drawablePadding="10dip"
+        android:src="@drawable/iconfont_saoyisao"
+        android:scaleType="centerInside"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+</FrameLayout>

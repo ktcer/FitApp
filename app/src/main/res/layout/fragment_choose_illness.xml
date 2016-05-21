@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ListView
+        android:id="@+id/illness_first_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/illness_second_lv"
+        android:layout_width="260dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/gray_second"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/illness_third_lv"
+        android:layout_width="120dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/gray_third"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</FrameLayout>

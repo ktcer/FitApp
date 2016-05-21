@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/LargePadding"
+        android:layout_marginRight="@dimen/LargePadding"
+        android:layout_marginTop="@dimen/LargerPadding"
+        android:background="@drawable/input_bar_bg_active"
+        android:orientation="horizontal" >
+
+        <com.cn.fit.ui.chat.ui.chatting.base.EmojiconEditText
+            android:id="@+id/content"
+            style="@style/CCPEditText"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:gravity="top"
+            android:singleLine="false"
+            android:textColor="@color/normal_text_color"
+            android:textColorHint="@color/hint_color_white_bg" />
+
+        <TextView
+            android:id="@+id/wordcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|center"
+            android:padding="@dimen/SmallestPadding"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/HintTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

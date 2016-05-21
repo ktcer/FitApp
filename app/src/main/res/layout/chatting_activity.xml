@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_bg_ll"
+    style="@style/NavPage"
+    android:background="@color/gray_second"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/chatting_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+        <com.cn.fit.ui.chat.ui.chatting.base.ECPullDownView
+            android:id="@+id/chatting_pull_down_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/chatting_history_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@drawable/ccp_chat_listitem"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:scrollingCache="false" />
+        </com.cn.fit.ui.chat.ui.chatting.base.ECPullDownView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.cn.fit.ui.chat.ui.chatting.view.CCPChattingFooter2
+            android:id="@+id/nav_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/message_editor_hight"
+            layout="@layout/include_message_newmask" />
+    </RelativeLayout>
+
+</LinearLayout>

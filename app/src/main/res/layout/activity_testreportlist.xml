@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    style="@style/NavPage" 
+    >
+
+    <include layout="@layout/main_top" />
+
+    <FrameLayout style="@style/NavPage" >
+
+        <RelativeLayout style="@style/NavPage" 
+            >
+
+            <com.cn.fit.util.refreshlistview.XListView
+                android:id="@+id/report_list"
+                style="@style/CCPList"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:scrollbars="none"
+                android:background="@color/transparent"
+                android:transcriptMode="disabled" >
+            </com.cn.fit.util.refreshlistview.XListView>
+
+            <TextView
+                android:id="@+id/empty_tip_tv"
+                style="@style/CCPFontEmptyMsgLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:text="@string/main_empty_testreport"
+                android:visibility="gone" />
+
+            <!-- <include layout="@layout/tab_loading_area" /> -->
+        </RelativeLayout>
+
+        <com.cn.fit.util.floatactionbutton.FloatingActionButton
+            android:id="@+id/fab_addtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/blue_second"
+            fab:fab_colorPressed="@color/progressbutton_presscolor"
+            fab:fab_type="normal"
+            fab:fab_colorRipple="@color/blue_third" />
+    </FrameLayout>
+
+</LinearLayout>

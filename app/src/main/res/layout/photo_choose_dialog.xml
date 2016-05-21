@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/videoremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remind_video_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="设置视频提醒"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:visibility="gone"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/audioremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remind_video_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="设置音频提醒"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/textremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remind_text_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="设置文字提醒"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <Button
+        android:id="@+id/cancelremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/remind_cancel_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/bg_black"
+        android:text="取消"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

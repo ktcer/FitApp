@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/list_biankuang" >
+
+        <LinearLayout
+            android:id="@+id/layout_personnalData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_personalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/sex_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/brithday_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/province_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/nation_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/people_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/family_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/occupytion_PersonalData"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/height_tv"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/weight_tv"
+                style="@style/text_style_nosingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

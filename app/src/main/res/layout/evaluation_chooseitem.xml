@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+
+        <TextView
+            android:id="@+id/content_evaluationItem"
+            style="@style/text_style_nosingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/answer_evaluationItem"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:cursorVisible="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/unit_evalutionItem"
+            style="@style/text_style"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <com.cn.fit.util.radioandcheckbox.widget.FlowRadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip" >
+
+        <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+            android:id="@+id/result_a"
+            style="@style/carbon_RadioButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+            android:id="@+id/result_b"
+            style="@style/carbon_RadioButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+            android:id="@+id/result_c"
+            style="@style/carbon_RadioButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+            android:id="@+id/result_d"
+            style="@style/carbon_RadioButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+    </com.cn.fit.util.radioandcheckbox.widget.FlowRadioGroup>
+
+    <com.cn.fit.util.FlowLayout
+        android:id="@+id/checkGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        android:visibility="gone" >
+
+        <com.cn.fit.util.radioandcheckbox.widget.CheckBox
+            android:id="@+id/check_a"
+            style="@style/carbon_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.CheckBox
+            android:id="@+id/check_b"
+            style="@style/carbon_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.CheckBox
+            android:id="@+id/check_c"
+            style="@style/carbon_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.cn.fit.util.radioandcheckbox.widget.CheckBox
+            android:id="@+id/check_d"
+            style="@style/carbon_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+    </com.cn.fit.util.FlowLayout>
+
+</LinearLayout>

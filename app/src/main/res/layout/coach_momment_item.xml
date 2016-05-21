@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/conversation_item_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/NormalListHeight"
+    android:background="@drawable/list_item_selector"
+    android:baselineAligned="false"
+    android:minHeight="@dimen/NormalListHeight"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/NormalAvatarWrapSize"
+        android:layout_height="@dimen/NormalAvatarWrapSize"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/NormalPadding"
+        android:layout_marginRight="@dimen/SmallerPadding" >
+
+<!--         <ImageView -->
+<!--             android:id="@+id/avatar_iv" -->
+<!--             android:layout_width="@dimen/NormalAvatarSize" -->
+<!--             android:layout_height="@dimen/NormalAvatarSize" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:scaleType="fitCenter" -->
+<!--             android:src="@drawable/icon_touxiang_persion_gray" /> -->
+
+		<com.cn.fit.util.CircleImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="@dimen/NormalAvatarSize"
+            android:layout_height="@dimen/NormalAvatarSize"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/default_user_icon" />
+        
+        <TextView
+            android:id="@+id/tipcnt_tv"
+            style="@style/UnreadCountTipsStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/SmallerPadding"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/avatar_prospect_iv"
+            style="@style/UnreadDotStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/BasicPaddingSize"
+            android:layout_marginTop="@dimen/OneDPPadding"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="@dimen/NormalPadding"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="24.0dip"
+            android:layout_marginTop="@dimen/OneDPPadding"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                    android:id="@+id/nickname_tv"
+                    style="@style/CCPFontTitleInList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="nickname_tv"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="@dimen/NormalTextSize" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/update_time_tv"
+                style="@style/CCPFontTimeInList"
+                android:layout_width="110.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:tag="update_time_tv"
+                android:textColor="@color/light_text_color"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="22.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                    android:id="@+id/last_msg_tv"
+                    style="@style/CCPFontTipInList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="left|center"
+                    android:tag="last_msg_tv"
+                    emojicon:emojiconSize="@dimen/text_size_17"
+                    android:text="{lastmsg}"
+                    android:textColor="@color/last_msg_tv_color"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right|center" >
+
+                <ImageView
+                    android:id="@+id/image_input_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/SmallerPadding"
+                    android:src="@drawable/chat_input_text_notify_normal" />
+                <ImageView
+                    android:id="@+id/image_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/SmallerPadding"
+                    android:src="@drawable/chat_mute_notify_normal"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

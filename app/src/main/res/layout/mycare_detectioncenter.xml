@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ascv="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:ignore="Merge RootFrame" >
+
+    <include layout="@layout/main_top" />
+    <!--
+         <com.cn.aihu.util.coverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        fcf:maxRotation="0"
+        fcf:scaleDownGravity="0.5"
+        fcf:unselectedAlpha="0.1"
+        fcf:unselectedScale="0.1" 
+        android:visibility="visible"/>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dip" >
+
+        <com.cn.fit.util.CircleImageView
+            android:id="@+id/iv_myphoto"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            app:border_color="@color/whitesmoke"
+            app:border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_bloodPressure"
+            style="@style/text_small_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:drawableLeft="@drawable/health_chart"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:text="  健康趋势图"
+            android:textColor="@color/black" />
+
+        <com.cn.fit.util.segmentbutton.AndroidSegmentedControlView
+            android:id="@+id/choosePeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:visibility="gone"
+            ascv:ascv_defaultSelection="0"
+            ascv:ascv_items="@array/chartdate"
+            ascv:ascv_selectedColor="@color/test_attr_selected_color"
+            ascv:ascv_selectedTextColor="@color/test_attr_selected_text_color"
+            ascv:ascv_stretch="true"
+            ascv:ascv_unselectedColor="@color/test_attr_unselected_color"
+            ascv:ascv_unselectedTextColor="@color/test_attr_unselected_text_color" />
+
+        <TextView
+            android:id="@+id/history_detectioncenter"
+            style="@style/text_small_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:drawableRight="@drawable/arrowha"
+            android:gravity="right|center_vertical"
+            android:text="测量记录 "
+            android:textColor="@color/font_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/lightgray" >
+    </View>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/menulist"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_weight="1.5"
+        android:background="@drawable/borderoth" >
+    </lecho.lib.hellocharts.view.LineChartView>
+
+    <LinearLayout
+        android:id="@+id/indicate"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/indicate1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#33B5E5"
+            android:gravity="center"
+            android:text="收缩压(mmHg)"
+            android:textColor="@color/white"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/indicate2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#99CC00"
+            android:gravity="center"
+            android:text="舒张压(mmHg)"
+            android:textColor="@color/white"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/indicate3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF4444"
+            android:gravity="center"
+            android:text="心率(次/分)"
+            android:textColor="@color/white"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/indicate4"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7ae00"
+            android:gravity="center"
+            android:text="心率(次/分)"
+            android:textColor="@color/white"
+            android:textSize="14dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <com.cn.fit.util.HorizontalPicker
+            xmlns:horizontalpicker="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/picker_background"
+            android:ellipsize="marquee"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/picker_text_color"
+            android:textSize="@dimen/text_size_16" />
+        <!-- app:dividerSize="10dp" -->
+        <!-- app:sideItems="2" -->
+        <!-- app:values="@array/values" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="40dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        style="@style/text_small_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/health_history"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dip"
+        android:text="  历史记录"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/alterData"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/list_biankuang"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/date1_bloodPressure"
+                style="@style/text_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="收缩压：" />
+
+            <TextView
+                android:id="@+id/date2_bloodPressure"
+                style="@style/text_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="舒张压：" />
+
+            <TextView
+                android:id="@+id/date3_heartRate"
+                style="@style/text_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="心    率：" />
+        </LinearLayout>
+
+        <com.cn.fit.util.FButton
+            android:id="@+id/receiveData"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="开始测量"
+            android:textColor="@android:color/white"
+            android:textSize="16dip"
+            fbutton:buttonColor="@color/lightgreen"
+            fbutton:shadowEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

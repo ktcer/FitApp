@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+<!--     <include layout="@layout/main_top" /> -->
+        <!-- <com.cn.aihu.util.PullToRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:focusable="false"
+        android:orientation="vertical" > -->
+	<ListView 
+	    android:id="@+id/lv_doctorinterview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+	    android:listSelector="@android:color/transparent"
+	    ></ListView>
+	  <!--  </com.cn.aihu.util.PullToRefreshView> -->
+</LinearLayout>

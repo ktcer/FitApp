@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_item_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E3E3"
+        android:paddingBottom="@dimen/SmallerPadding"
+        android:paddingLeft="@dimen/SmallPadding"
+        android:paddingTop="@dimen/SmallerPadding"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/HintTextSize"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/NormalListHeight"
+        android:background="@drawable/list_item_selector"
+        android:minHeight="@dimen/NormalListHeight"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/NormalAvatarWrapSize"
+            android:layout_height="@dimen/NormalAvatarWrapSize"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/SmallPadding"
+            android:layout_marginRight="@dimen/SmallerPadding" >
+
+
+            <com.cn.fit.util.CircleImageView
+                android:id="@+id/avatar_iv"
+                android:layout_width="@dimen/NormalAvatarSize"
+                android:layout_height="@dimen/NormalAvatarSize"
+                android:layout_centerVertical="true" 
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/default_user_icon" />
+            
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/SmallPadding"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+	            <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+	                android:id="@+id/name_tv"
+	                style="@style/CCPFontTitleInList"
+	                android:layout_marginTop="5.5dip"
+	                android:layout_marginBottom="4.5dip"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:tag="name_tv"
+	                android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+	                android:textColor="@color/normal_text_color"
+	                android:textSize="@dimen/NormalTextSize" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginTop="5.5dip"
+                    android:layout_marginBottom="4.5dip"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/iconfont_shengyutianshu"
+                    android:padding="1dip" />
+
+                <TextView
+                    android:id="@+id/tv_remain_period"
+                    style="@style/CCPFontTipInList"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5.5dip"
+                    android:layout_marginBottom="4.5dip"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:layout_gravity="center_vertical"
+                    android:tag="account"
+                    android:text=""
+                    android:textColor="@color/font_gray"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/account"
+                    style="@style/CCPFontTipInList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:ellipsize="end"
+                    android:gravity="left|center"
+                    android:tag="account"
+                     android:visibility="gone"
+                    android:text="account"
+                    android:textColor="@color/font_gray"
+                    android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/contactitem_select_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/LargerPadding"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/main_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.cn.fit.util.CircleImageView
+            android:id="@+id/iv_nurse_activity"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            app:border_width="2dp"
+       	    app:border_color="@color/whitesmoke"
+            android:src="@drawable/default_user_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name_nurse_activity"
+                    style="@style/text_style"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/position_nurse_activity"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hospital_nurse_activity"
+                style="@style/text_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/office_nurse_activity"
+                style="@style/text_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/introduction_nurse_activity"
+                style="@style/text_small_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+          <ImageView
+            android:id="@+id/videoAppoint_myCareNurse"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/videoappointment" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/telAppoint_myCareNurse"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/telappointment" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/upLine_myCareNurse"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/upline" >
+        </ImageView>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <!-- <TextView
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="视频预约" >
+        </TextView>
+
+        <TextView
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="电话预约" >
+        </TextView>
+
+        <TextView
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="门诊预约" >
+        </TextView> -->
+        
+
+        
+        <com.cn.fit.util.FButton
+                android:id="@+id/videoAppoint_myCareNurse"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="视频预约"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="false" />
+        <com.cn.fit.util.FButton
+                android:id="@+id/telAppoint_myCareNurse"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="电话预约"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_emerald"
+                fbutton:shadowEnabled="false" />
+
+             <com.cn.fit.util.FButton
+                android:id="@+id/upLine_myCareNurse"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="门诊预约"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_sun_flower"
+                fbutton:shadowEnabled="false" />
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/pic_myCareNurse"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="图文咨询 "
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_alizarin"
+                fbutton:shadowEnabled="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/trans_30_blue"
+        android:paddingBottom="8dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="8dip"
+        android:text="专家简介" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/experct_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dip"
+                android:text="专家简哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈gtrherrthrgrtgtdgvfdgtfhbtrttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt介"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/advisory_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="@color/trans_30_blue"
+            android:gravity="center"
+            android:text="咨询列表"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/essay_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="@color/trans_30_blue"
+            android:gravity="center"
+            android:text="文章列表"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <com.cn.fit.util.refreshlistview.XListView
+        android:id="@+id/lv_advisory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </com.cn.fit.util.refreshlistview.XListView>
+
+        <ListView
+            android:id="@+id/lv_myCareNurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/lightgray"
+            android:dividerHeight="1dp"
+            android:visibility="gone"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+   <!--  <ListView
+        android:id="@+id/lv_myCareNurse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </ListView> -->
+
+</LinearLayout>

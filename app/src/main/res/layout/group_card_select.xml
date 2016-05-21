@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/group_card_select_list"
+            style="@style/CCPList"
+            android:focusable="true"
+            android:paddingLeft="@dimen/SmallPadding"
+            android:paddingRight="@dimen/SmallPadding"
+            android:scrollbars="none"
+            android:transcriptMode="disabled" />
+
+        <TextView
+            android:id="@+id/group_card_empty_tip_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/address_group_card_empty_tip"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/NormalTextSize"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

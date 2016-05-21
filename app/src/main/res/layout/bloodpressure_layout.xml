@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+    
+    <TextView 
+        android:id="@+id/indicate_HeartRate"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:text="心博曲线图"
+        android:gravity="center"
+        style="@style/text_16_666666"/>
+
+    <com.cn.fit.util.HeartRateView
+        android:id="@+id/chart"  
+        android:background="@color/black"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_width="wrap_content"  
+        android:layout_height="100dip" 
+        /> 
+     <TextView 
+         android:gravity="right"
+         android:padding="5dip"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:layout_height="wrap_content"
+         android:id="@+id/tv_heartRate"
+         android:layout_width="match_parent"
+         android:background="@color/black"
+         android:text="心率：50次/分"
+         android:textColor="@color/green"
+         /> 
+
+    <TextView 
+        android:layout_marginTop="10dip"
+        android:id="@+id/indicate_bloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实时血压\n收缩压(mmHg)          舒张压(mmHg)"
+        android:gravity="center"
+        style="@style/text_16_666666"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dip">
+    <TextView
+        android:id="@+id/tv_ssy"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/dialog_picker_bg"
+        android:textSize="40dip"
+        android:textColor="@color/picker_color"
+        android:layout_marginBottom="10dip"/>
+        <TextView
+        android:id="@+id/tv_szy"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:textSize="40dip"
+        android:textColor="@color/picker_color"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_picker_bg"
+        style="@style/text_style" 
+        android:layout_marginBottom="10dip"/>
+    </LinearLayout>
+
+
+</LinearLayout>

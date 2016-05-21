@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E3"
+    android:fadingEdge="none"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Title_category"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DefaultTabbarHeight"
+            android:background="@drawable/tab_item_bg"
+            android:text="@string/str_group_profile_tips" />
+
+        <com.cn.fit.ui.chat.ui.group.GroupProfileView
+            android:id="@+id/group_file"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            style="@style/Title_category"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DefaultTabbarHeight"
+            android:background="@drawable/tab_item_bg"
+            android:text="@string/str_group_notice_tips" />
+
+        <EditText
+            android:id="@+id/group_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="#656565"
+            android:padding="@dimen/SmallPadding"
+            android:minLines="3"
+            android:gravity="top"/>
+        <include layout="@layout/logout_btn"/>
+    </LinearLayout>
+
+</ScrollView>

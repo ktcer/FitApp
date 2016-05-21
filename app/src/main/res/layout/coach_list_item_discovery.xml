@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/artist_half_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/half_artist_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/coach_text_apply"
+                style="@style/GridviewShadowedTextWrap"
+                android:text="功能性训ooooo练000"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_20"
+                android:background="@drawable/text_view_bord"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                style="@style/GridviewShadowedTextWrap"
+                android:text="优美体形"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/text_size_16"
+                android:background="@drawable/text_view_bord"
+                android:id="@+id/function_textView3_apply"
+                android:layout_below="@+id/coach_text_apply"
+                android:layout_toLeftOf="@+id/function_much_textView"
+                android:layout_toStartOf="@+id/function_much_textView"/>
+            <TextView
+                style="@style/GridviewShadowedTextWrap"
+                android:text="汗滴值"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_16"
+                android:background="@color/transparent_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/function_much_textView"
+                android:layout_alignTop="@+id/function_textView3_apply"
+                android:layout_toLeftOf="@+id/function_number"
+                android:layout_toStartOf="@+id/function_number"/>
+            <TextView
+                style="@style/GridviewShadowedTextWrap"
+                android:text="3000"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_16"
+                android:background="@color/blue_second"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/function_number"
+                android:layout_alignTop="@+id/function_much_textView"
+                android:layout_alignRight="@+id/coach_text_apply"
+                android:layout_alignEnd="@+id/coach_text_apply"/>
+
+            <LinearLayout
+                android:id="@+id/half_artist_info_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/half_artist_image"
+                android:background="@color/transparent_black"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/gridview_item_ccontainer_padding_left"
+                android:paddingLeft="@dimen/gridview_item_ccontainer_padding_left"
+                android:paddingRight="@dimen/gridview_item_ccontainer_padding_right"
+                android:paddingTop="@dimen/gridview_item_ccontainer_padding_left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/half_title_text"
+                        style="@style/GridviewShadowedText"
+                        android:layout_weight="0.5"
+                        android:text="有氧舞蹈（仅上门）1对一"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9">
+
+                        <TextView
+                            android:id="@+id/applynum"
+                            style="@style/GridviewShadowedTextWrap"
+                            android:text="已报名:0/1"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/money"
+                            style="@style/GridviewShadowedTextWrap"
+                            android:layout_toRightOf="@id/applynum"
+                            android:text="￥98.0"
+                            android:layout_gravity="center"
+                            android:textColor="@color/tomatored"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/_text"
+                        style="@style/GridviewShadowedText"
+                        android:layout_weight="0.5"
+                        android:text="12-26 12：00  100人参加过"
+                        android:textSize="@dimen/text_size_12"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9">
+
+                        <ImageView
+                            android:id="@+id/addressimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_distance_p"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/address_text"
+                            style="@style/GridviewShadowedText"
+                            android:layout_toRightOf="@id/addressimage"
+                            android:text="北京市海淀区 875km"
+                            android:textSize="@dimen/text_size_10"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_colorstrip"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/colorstrip_height"
+                android:layout_alignBottom="@+id/half_artist_image"
+                android:background="@color/white"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    style="@style/NavPage" >
+
+    <RelativeLayout style="@style/NavPage" >
+
+        <ListView
+            android:id="@+id/group_list"
+            style="@style/CCPList"
+            android:focusable="true"
+            android:scrollbars="none"
+            android:transcriptMode="disabled" />
+
+        <TextView
+            android:id="@+id/empty_tip_tv"
+            style="@style/CCPFontEmptyMsgLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/gray_second"
+            android:text="@string/main_empty_group"
+            android:visibility="gone" />
+
+        <include layout="@layout/tab_loading_area" />
+    </RelativeLayout>
+
+    <com.cn.fit.util.floatactionbutton.FloatingActionButton
+        android:id="@+id/fab_addgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        fab:fab_colorNormal="@color/blue_second"
+        fab:fab_colorPressed="@color/blue_first"
+        fab:fab_colorRipple="@color/blue_third" />
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+
+     http://www.yuntongxun.com
+
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    style="@style/NavPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fitsSystemWindows="true"
+    android:background="@color/gray_second"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip"
+        android:orientation="vertical" >
+
+
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_new_msg_sound"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="switchbutton"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/settings_new_msg_notification_sound" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_new_msg_shake"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="switchbutton"
+            ecdemo:item_showDivider="false"
+            ecdemo:item_titleText="@string/settings_new_msg_notification_shake" />
+
+        <!--登陆设置-->
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_serverIP"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            android:layout_marginTop="@dimen/LargerPadding"
+            ecdemo:item_showDivider="true"
+            android:visibility="gone"
+            ecdemo:item_titleText="@string/settings_server_address" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_appkey"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            ecdemo:item_showDivider="true"
+            android:visibility="gone"
+            ecdemo:item_titleText="@string/settings_appkey" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_token"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            ecdemo:item_showDivider="false"
+            android:visibility="gone"
+            ecdemo:item_titleText="@string/settings_apptoken" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_update"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="arrow"
+            ecdemo:item_showDivider="false"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/LargerPadding"
+            ecdemo:item_titleText="@string/demo_current_version" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/setting_exit"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="@dimen/SmallListHeight"
+            ecdemo:item_showDivider="true"
+            android:visibility="gone"
+            ecdemo:item_titleText="@string/settings_exit_title" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/setting_switch"
+            android:visibility="gone"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_showDivider="false"
+            ecdemo:item_titleText="@string/settings_switch_title" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/txt_helpcenter"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="@dimen/btn_topbar_paddingHorizontal"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="帮助中心" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/txt_aboutus"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_showDivider="false"
+            ecdemo:item_titleText="关于我们" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:gravity="center" >
+
+            <com.cn.fit.util.FButton
+                android:id="@+id/unload_informationMange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="退出登录"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_16"
+                fbutton:buttonColor="@color/red"
+                fbutton:shadowEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

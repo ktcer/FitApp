@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:gravity="center_vertical"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_download" 
+        android:paddingLeft="16dp"/>
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_navigation_close_inverted"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/notificationImage"
+        android:paddingLeft="26dp"
+        android:textColor="#FFFFFFFF" />
+    <!-- android:textColor="#FF000000"  -->
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationImage"
+        android:paddingTop="2dp"
+        android:textColor="#FFFFFFFF"
+        android:paddingLeft="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notificationTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/notificationPercent"
+        android:layout_below="@id/notificationTitle"
+        android:paddingLeft="26dp"
+        android:paddingRight="3dp"
+        android:layout_toRightOf="@id/ivCancel"
+        android:paddingTop="2dp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+
+        <com.cn.fit.util.refreshlistview.XListView
+        android:id="@+id/add_news_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" >
+    </com.cn.fit.util.refreshlistview.XListView>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white" >
+    
+    <include layout="@layout/main_top"/>
+
+     <TextView 
+	     android:layout_width="match_parent"
+	     android:layout_height="0dip"
+	     android:layout_weight="0.2"
+	     style="@style/title_small_style"
+	     android:textColor="@color/blue_second"
+	     android:gravity="center"
+	     android:text="训练视频"
+	     android:background="@color/trans_30_blue"
+	     />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1.0"
+	    android:padding="10dip"
+	    android:layout_margin="10dip"
+	    android:orientation="vertical"
+	    android:background="@drawable/list_biankuang">
+    <android.support.v4.view.ViewPager
+	    android:id="@+id/viewPager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="2.0"
+	    android:padding="0dip"
+	    ></android.support.v4.view.ViewPager>
+	<LinearLayout
+	    android:layout_marginTop="5dip"
+	    android:id="@+id/viewGroup"
+	    android:layout_weight="0.1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal"
+	    ></LinearLayout> 
+	</LinearLayout>
+
+	<TextView 
+	     android:layout_width="match_parent"
+	     android:layout_height="0dip"
+	     android:layout_weight="0.2"
+	     style="@style/title_small_style"
+	     android:gravity="center"
+	     android:text="训练说明"
+	     android:textColor="@color/blue_second"
+	     android:background="@color/trans_30_blue"
+	     />
+	
+	<TextView
+  		android:layout_width="fill_parent"
+  		android:background="@drawable/list_biankuang"
+  		android:layout_height="0dip"
+  		android:padding="10dip"
+  		android:layout_weight="1"
+  		android:id="@+id/health_summarize"
+  		android:layout_margin="10dip"
+  		style="@style/text_style"
+  		android:singleLine="false"
+  		android:scrollbars="vertical"
+   		android:maxLines="12"
+   		android:gravity="top"
+  		
+  		>
+	  	</TextView>
+
+
+</LinearLayout>

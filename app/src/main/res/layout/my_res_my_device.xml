@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+    
+    <include
+	    android:id="@+id/device_title_bar_layout" 
+	    layout="@layout/main_top"/>
+
+    <!-- <RelativeLayout
+        android:id="@+id/device_title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg_blue" >
+
+        <TextView 
+            android:id="@+id/middle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的设备"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        
+        <ImageView 
+            android:id="@+id/device_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_icon"/>
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rent_device"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/trans_30_blue"
+            android:textColor="@color/blue_second"
+            android:text="租赁" 
+            style="@style/text_large_style">
+        </Button>
+
+        <Button
+            android:id="@+id/bind_device"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="绑定"
+            style="@style/text_large_style"/>
+    </LinearLayout>
+    
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/lightgray"/>
+    
+    <ListView
+        android:id="@+id/lv_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" 
+	    android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+	    android:listSelector="@android:color/transparent">
+    </ListView>
+    
+</LinearLayout>

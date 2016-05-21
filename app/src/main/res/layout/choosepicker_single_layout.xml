@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+    <TextView 
+        android:id="@+id/indicate_Info"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:text="请选择您的身高"
+        android:gravity="center"
+        style="@style/text_16_666666"/>
+    <com.cn.fit.util.PickerView
+        android:id="@+id/minute_pv"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        style="@style/text_style" 
+        android:background="@drawable/dialog_picker_bg"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"/>
+
+</LinearLayout>
+

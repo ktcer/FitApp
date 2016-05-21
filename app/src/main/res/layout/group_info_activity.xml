@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+     Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+     that can be found in the LICENSE file in the root of the web site.
+ 
+     http://www.yuntongxun.com
+ 
+     An additional intellectual property rights grant can be found
+     in the file PATENTS.  All contributing project authors may
+     be found in the AUTHORS file in the root of the source tree.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_content"
+    style="@style/NavPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:fadingEdge="none"
+    android:scrollbars="none"
+    android:fillViewport="true" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Title_category"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DefaultTabbarHeight"
+            android:background="@drawable/tab_item_bg"
+            android:visibility="gone"
+            android:text="@string/str_group_notice_tips" />
+
+        <EditText
+            android:id="@+id/group_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="#656565"
+            android:padding="@dimen/SmallPadding"
+            android:minLines="3"
+            android:visibility="gone"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/group_count"
+            style="@style/Title_category"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DefaultTabbarHeight"
+            android:background="@drawable/tab_item_bg"
+            android:text="@string/str_group_members_tips" />
+
+        <ListView
+            android:id="@+id/member_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:minHeight="150.0dip"
+            android:divider="@null"
+            android:dividerHeight="0.0px"
+            android:focusable="true"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:transcriptMode="disabled" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_new_msg_notify"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_accessoryType="switchbutton"
+            android:layout_marginTop="@dimen/NormalPadding"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/settings_new_msg_notify" />
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/settings_room_my_displayname"
+            style="@style/settings_item_layout_single"
+            android:visibility="gone"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/room_my_displayname" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/group_name"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="@dimen/NormalPadding"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/group_title_name" />
+
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/group_notice2"
+            style="@style/settings_item_layout_single"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/str_group_notice_tips" />
+        
+        <com.cn.fit.ui.chat.common.view.SettingItem
+            android:id="@+id/clear_msg"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="@dimen/SmallListHeight"
+            ecdemo:item_showDivider="true"
+            ecdemo:item_titleText="@string/clear_chat" />
+
+        
+        <com.cn.fit.util.FButton
+            android:id="@+id/btn_free_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="@string/str_group_permission_spinner"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            fbutton:buttonColor="@color/red"
+            fbutton:shadowEnabled="false" />
+    </LinearLayout>
+
+</ScrollView>

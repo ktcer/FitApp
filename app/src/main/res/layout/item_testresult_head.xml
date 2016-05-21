@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:text="亲爱的  18010098725：" />
+
+        <TextView
+            android:id="@+id/txt_desc1"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="false"
+            android:text="您好，爱·护专家为您细致的分析了身体状况，这份报告将由您的健康秘书继续为您解读，在我们的帮助下，您的身体状况一定会越来越好！" />
+
+        <LinearLayout
+            android:id="@+id/test_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:singleLine="false"
+                android:text="您本次评估的身体状况等级为："
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_risk_five_cursor"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_risk_five_cursor"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_risk_five_cursor"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_risk_five_cursor"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_risk_five_cursor"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/ic_risk_five_top_bg" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:singleLine="false"
+            android:text="评估结果详情"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:background="@color/font_gray" />
+    </LinearLayout>
+
+</LinearLayout>

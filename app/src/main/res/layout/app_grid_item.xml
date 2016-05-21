@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="73.0dip"
+        android:layout_height="90.0dip" >
+
+        <LinearLayout
+            android:layout_width="73.0dip"
+            android:layout_height="90.0dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="64.0dip"
+                android:layout_height="64.0dip" >
+
+                 <ImageView
+                    android:id="@+id/app_grid_item_icon"
+                    android:layout_width="64.0dip"
+                    android:layout_height="64.0dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/app_grid_item_icon_mask"
+                    android:layout_width="64.0dip"
+                    android:layout_height="64.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_panel_shade"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/app_grid_item_name"
+                style="@style/app_grid_item_name_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="78.0dip"
+                android:singleLine="true"
+                android:textColor="#ff888888" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

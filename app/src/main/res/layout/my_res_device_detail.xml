@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include
+	    layout="@layout/main_top"/>
+
+    <!-- <RelativeLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/head_bg_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设备详情"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" 
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备类型：专用设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20" />
+        
+        <TextView
+            android:id="@+id/article_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备名称：陈敏的设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20" />
+        
+        <TextView
+            android:id="@+id/article_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备使用时间：66天"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/simple_item_tv"
+        style="@style/text_large_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:text="门诊" />
+
+</LinearLayout>

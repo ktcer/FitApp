@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip"
+    android:paddingTop="6.0dip" >
+
+    <Button
+        android:id="@+id/chatting_addcontact_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_weight="1.0"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/chatting_msg_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_weight="1.0"
+        android:visibility="gone" />
+
+</LinearLayout>

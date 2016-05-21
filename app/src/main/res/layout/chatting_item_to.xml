@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv" >
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatting_user_tv"
+            style="@style/ChattingUISenderText"
+            android:layout_gravity="right"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/chatting_state_iv"
+                style="@style/ChattingUIState"
+                android:layout_gravity="center_vertical" />
+
+            <ProgressBar
+                android:id="@+id/uploading_pb"
+                style="@style/smallCustomProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+            <com.cn.fit.ui.chat.ui.chatting.base.EmojiconTextView
+                android:id="@+id/chatting_content_itv"
+                style="@style/ChattingUIText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_bg"
+                android:autoLink="all"
+                emojicon:emojiconSize="@dimen/Emoji_icon_size"
+                android:linksClickable="false"
+                android:maxWidth="215.0dip"
+                android:minHeight="@dimen/ChattingContentMinHeight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/chatting_item_avatar_to" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="70dip"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dip" 
+        android:layout_marginRight="20dip">
+
+        <TextView
+            android:id="@+id/keep_health_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:text="春季干燥如何养生"
+            style="@style/text_style"/>
+
+        <TextView
+            android:id="@+id/collect_time_tv"
+            android:layout_marginTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keep_health_tv"
+            android:text="收藏时间"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:layout_width="0dip"
+        android:src="@drawable/arrow"/>
+
+</LinearLayout>

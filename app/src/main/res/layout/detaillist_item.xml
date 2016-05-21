@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_selector"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/SmallListHeight"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/NormalPadding"
+    android:paddingRight="@dimen/NormalPadding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:minHeight="@dimen/SmallListHeight"
+            android:paddingLeft="@dimen/SmallPadding"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@android:id/title"
+                style="@style/CCPFontPreferenceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@android:id/summary"
+                style="@style/CCPFontPreferenceSummary"
+                android:paddingBottom="@dimen/SmallPadding"
+                android:paddingRight="@dimen/SmallPadding"
+                android:paddingTop="@dimen/SmallPadding"
+                android:singleLine="true"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="@dimen/NormalPadding"
+            android:gravity="right"
+            android:duplicateParentState="true" >
+
+            <CheckedTextView
+                android:id="@+id/accessory_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/text_size_14"
+                android:singleLine="true"/>
+            <TextView
+                android:id="@+id/text_tv_one"
+                style="@style/UnreadCountTipsStyle"
+                android:text="@string/app_new"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_bottom_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_divider_height"
+        android:background="@color/list_divider" />
+
+</LinearLayout>

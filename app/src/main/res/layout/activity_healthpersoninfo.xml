@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_second"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/personinfo_tip_tv"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="6dip"
+                android:singleLine="false"
+                android:textColor="@color/blue_second"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border" >
+
+                <EditText
+                    android:id="@+id/tv_personinfo_name"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的姓名"
+                    android:textColorHint="@color/font_gray"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/delete_name"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/txt_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="性别：" />
+
+                <RadioGroup
+                    android:id="@+id/tv_personinfo_gender_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="性别"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+                        android:id="@+id/radioMale"
+                        style="@style/carbon_RadioButton"
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/settings_male"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.cn.fit.util.radioandcheckbox.widget.RadioButton
+                        android:id="@+id/radioFemale"
+                        style="@style/carbon_RadioButton"
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/settings_female"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border" >
+
+                <com.cn.fit.util.superpicker.CustomDatePicker
+                    android:id="@+id/tv_personinfo_birthday"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="点击选择您的出生年月"
+                    android:textColorHint="@color/font_gray"
+                    android:textCursorDrawable="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border" >
+
+                <TextView
+                    android:id="@+id/unit_tall"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text="厘米"
+                    android:visibility="visible" />
+
+                <com.cn.fit.util.superpicker.CustomNumberPickerDouble
+                    android:id="@+id/tv_personinfo_tall"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/unit_tall"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="点击选择您的身高"
+                    android:inputType="number"
+                    android:textColorHint="@color/font_gray"
+                    android:textCursorDrawable="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border" >
+
+                <TextView
+                    android:id="@+id/unit_weight"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text="千克"
+                    android:visibility="visible" />
+
+                <com.cn.fit.util.superpicker.CustomNumberPickerDouble
+                    android:id="@+id/tv_personinfo_weight"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/unit_weight"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="点击选择您的体重"
+                    android:inputType="number"
+                    android:textColorHint="@color/font_gray"
+                    android:textCursorDrawable="@null" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <com.cn.fit.util.FButton
+                    android:id="@+id/btn_personinfo_starttest"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minHeight="@dimen/demo_button_min_height"
+                    android:minWidth="@dimen/demo_button_min_width"
+                    android:text="提交"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    fbutton:buttonColor="@color/blue_second"
+                    fbutton:cornerRadius="1dp"
+                    fbutton:shadowEnabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
